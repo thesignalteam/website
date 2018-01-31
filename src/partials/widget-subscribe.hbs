@@ -1,0 +1,17 @@
+<div class="widget">
+	<h4 class="widget-title h6">Subscribe to {{@blog.title}}</h4>
+	<div class="content tagcloud">
+	{{#if @labs.subscribers}}
+		<section class="gh-subscribe">
+			<p>Get the latest posts delivered right to your inbox.</p>
+			{{subscribe_form
+				form_class="sign-up-form"
+				input_class="form-control"
+				button_class="btn btn-primary"
+				placeholder="Enter your email..."
+			}}
+		</section>
+	{{/if}}
+ </div>
+</div>
+<!-- end end widget -->

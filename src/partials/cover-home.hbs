@@ -1,0 +1,18 @@
+<!-- start cover -->
+<section class="cover cover-home {{#if @blog.cover_image}}has-image{{/if}}" {{#if @blog.cover_image}} style="background-image: url({{@blog.cover_image}});"{{/if}}>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8">
+				<div class="cover-content-wrap align-center">
+					{{#if @blog.description}}
+					<h1 class="intro-title">{{@blog.description}}</h1>
+					{{/if}}
+					<P class="intro-description">
+						Minimal and modern theme for Ghost. Use it for personal blog or multi-author blog / magazine.
+					</P>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end cover -->

@@ -1,0 +1,16 @@
+{
+    "name": "thesignal",
+    "description": "Ghost theme for thesign.al",
+    "demo": "http://polar.gbjsolution.com",
+    "version": "0.0.1",
+    "engines": {
+        "ghost": ">=1.0.0"
+    },
+    "screenshots": {
+        "desktop": "assets/screenshot-desktop.jpg",
+        "mobile": "assets/screenshot-mobile.jpg"
+    },
+    "config": {
+        "posts_per_page": 6
+    }
+}

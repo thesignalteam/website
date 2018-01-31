@@ -1,0 +1,34 @@
+<!-- start footer -->
+<footer class="site-footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    {{> widget-recentpost}}
+                </div>
+                <div class="col-sm-4">
+                    {{> widget-tagcloud}}
+                </div>
+                <div class="col-sm-4">
+                    {{> widget-text}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+		<div class="container">
+            <div class="footer-bottom-wrap clearfix">
+                <div class="social-links-wrap">
+                    {{> social-links}}
+                </div>
+                <div class="copyright-info">
+                    &copy; {{date format="YYYY"}} <a href="{{@blog.url}}">{{@blog.title}}</a>. All right Reserved.
+                    Powered by <a href="https://ghost.org/">Ghost</a>
+                </div>
+            </div>
+		</div>
+	</div>
+</footer>
+<!-- end footer -->
+<span class="back-to-top pull-right" id="back-to-top"><i class="fa fa-angle-up"></i></span>
+{{> search-modal}}

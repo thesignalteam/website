@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{{! Document Settings }}
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		{{! Page Meta }}
+		<title>{{meta_title}}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- stylesheets -->
+		{{! Styles'n'Scripts }}
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap.min.css"}}">
+		<link rel="stylesheet" type="text/css" href="{{asset "css/font-awesome.min.css"}}">
+		<link rel="stylesheet" type="text/css" href="{{asset "css/hl-styles/atom-one-dark.css"}}">
+		<link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}">
+		{{> config}}
+		{{! Ghost outputs important style and meta data with this tag }}
+		{{ghost_head}}
+	</head>
+	<body class="{{body_class}}">
+		{{! insert header partial}}
+		{{> header}}
+		{{{body}}}
+		{{! insert footer partial}}
+		{{> footer}}
+        <h1>{{@blog.url}}</h1>
+
+		{{! scripts}}
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="{{asset "js/bootstrap.min.js"}}"></script>
+		<script src="{{asset "js/plugins.js"}}"></script>
+		<script src="{{asset "js/main.js"}}"></script>
+		{{ghost_foot}}
+	</body>
+</html>

@@ -1,0 +1,17 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+<div class="content-wrap">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="error-wrap align-center">
+					<h1 class="error-code">{{code}}</h1>
+					<h3 class="error-message">{{message}}</h3>
+					<p class="message-manual">Unfortunately the page you were looking for could not be found.</p>
+					<a href="{{@blog.url}}" class="btn btn-primary">Visit Home page</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

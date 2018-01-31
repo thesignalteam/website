@@ -1,0 +1,33 @@
+<!-- start cover -->
+<section class="cover cover-author {{#if author.cover_image}}has-image{{/if}}" {{#if author.cover_image}} style="background-image: url({{author.cover_image}});"{{/if}}>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8">
+				<div class="cover-content-wrap align-center">
+					 <div class="avatar-wrap">
+						{{#if author.profile_image}}
+							<img src="{{author.profile_image}}" alt="Author image" class="avatar">
+							{{else}}
+							<img src="{{asset "images/default-user-image.jpg"}}" alt="Author image" class="avatar">
+						{{/if}}
+					</div>
+					<h3 class="author-name">{{author.name}}</h3>
+					<div class="meta-info">
+						<span class="post-count">Total {{plural pagination.total empty='0 Post' singular='% Post' plural='% Posts'}}</span>
+						
+					</div>
+					{{#if author.bio}}
+					<p class="description">{{author.bio}}</p>
+					{{/if}}
+					<ul class="author-social">
+						{{#if author.twitter}}<li><a href="{{twitter_url author.twitter}}"><i class="fa fa-twitter"></i></a></li>{{/if}}
+						{{#if author.facebook}}<li><a href="{{facebook_url author.facebook}}"><i class="fa fa-facebook"></i></a></li>{{/if}}
+						{{#if author.website}}<li><a href="{{author.website}}" target="_blank"><i class="fa fa-globe"></i></a></li>{{/if}}
+						{{#if author.location}}<li class="location"><i class="fa fa-map-marker"></i>{{author.location}}</li>{{/if}}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end cover -->

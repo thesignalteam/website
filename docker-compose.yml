@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  ghost:
+    image: ghost
+    container_name: thesignal-ghost-container
+    volumes:
+      - ./content/data:/var/lib/ghost/content/data
+      - ./content/images:/var/lib/ghost/content/images
+      - ./logs:/var/lib/ghost/content/logs
+      - ./src:/var/lib/ghost/content/themes/thesignal
+      - ./configs/config.development.json:/var/lib/ghost/config.development.json
+    ports:
+      - "4001:2368"
+    environment:
+      - NODE_ENV=development
+      - NPM_CONFIG_LOGLEVEL=debug

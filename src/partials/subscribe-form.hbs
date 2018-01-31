@@ -1,0 +1,13 @@
+{{#if @labs.subscribers}}
+<div class="subscribe">
+	<h3 class="subscribe-title align-center">Subscribe to {{@blog.title}}</h3>
+	<p class="align-center">Get the latest posts delivered right to your inbox.</p>
+	{{subscribe_form
+		form_class="sign-up-form"
+		input_class="form-control"
+		button_class="btn btn-primary"
+		placeholder="Enter your email..."
+	}}
+	<div class="subscribe-rss align-center">or subscribe via <a href="{{@blog.url}}/rss/">RSS FEED</a></div>
+</div>
+{{/if}}

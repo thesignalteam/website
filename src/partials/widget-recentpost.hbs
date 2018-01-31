@@ -1,0 +1,24 @@
+<!-- start recent post widget -->
+{{#get "posts" limit="3"}}
+<div class="widget">
+	<h4 class="widget-title h6">Recent Post</h4>
+	<div class="content recent-post">
+		{{#foreach posts}}
+		<div class="recent-single-post clearfix have-image">
+			<a href="{{url}}">
+				{{#if feature_image}}
+					<div class="post-thumb pull-left" style="background-image: url({{feature_image}});"></div>
+				{{else}}
+					<div class="post-thumb pull-left"><i class="fa fa-image align-center"></i></div>
+				{{/if}}
+			</a>
+			<div class="post-info">
+				<h4 class="post-title"><a href="{{url}}">{{title}}</a></h4>
+				<div class="date"><a href="{{url}}">{{date format="MMMM DD, YYYY"}}</a></div>
+			</div>
+		</div>
+		{{/foreach}}
+	</div>
+</div>
+{{/get}}
+<!-- end widget -->
