@@ -19,7 +19,7 @@ To start the Ghost CMS on your local machine,
 
 ### Development
 Feel free to play around with the production environment. **Any change you make will not affect the actual `thesign.al` site**, but note that:
-1. Development happens inside the `src` folder. **If you make changes to files in the `src` folder, changes should be automatically reflected on your local Ghost**.
+1. Development happens inside the `src` folder. **If you make changes to files in the `src` folder, they should be automatically reflected on your local Ghost server**.
 2. If for some weird reason you need to restart Ghost, run `docker-compose restart`.
 3. The test environment has been filled with *some* articles and contents on `thesign.al`, though my differ from the main site.
 4. To log into the content panel of Ghost, go to `http://localhost:4001/ghost`. Log in with credentials from submodule `private/credentials.md`. **For security reasons, accounts for the main thesign.al production server will be separate from the testing environment.**
@@ -42,7 +42,7 @@ TBD
 
 ### Copyright and Copyleft
 *GNU General Public License v3.0*.
-I know this is very mean. We'll look into this later.
+I know this is very mean. We'll look into licenses later.
 
 ### Links
 Work Session time --    [when2meet](https://www.when2meet.com/?6631949-VHpnt) <br>
