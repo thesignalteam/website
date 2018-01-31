@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Cerebri Sans';
+    src: url('/static/fonts/cerebrisans-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cerebri Sans';
+    src: url('/static/fonts/cerebrisans-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cerebri Sans';
+    src: url('/static/fonts/cerebrisans-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cerebri Sans';
+    src: url('/static/fonts/cerebrisans-bolditalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+* {
+    font-family: "Cerebri Sans", sans-serif !important;
+}
+
+body > * {
+    margin-bottom: 30px;
+}
+
+.ui.menu {
+    font-size: 24px;
+
+    border: none;
+    box-shadow: none;
+}
+
+.ui.menu .active.item {
+    background: none;
+
+    text-decoration: underline;
+}
+
+.signal.menu {
+    color: #8a8a8a;
+
+    font-weight: bold;
+    font-size: 24px;
+
+    margin-bottom: 30px;
+}
+
+.ui.card {
+    width: 360px;
+    height: 490px;
+
+    border-radius: 16px;
+    box-shadow: 0 0 30px 2px #e0e0e0;
+}
+
+.ui.card > :first-child {
+    border-radius: 16px 16px 0 0 !important;
+}
+
+.ui.card > .image {
+    height: 200px;
+}
+
+.ui.card > .image > * {
+    object-fit: cover;
+
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.ui.card > .content > .description {
+    margin-bottom: 20px;
+}
+
+.ui.card > .content > .header:not(.ui) {
+    font-size: 20px;
+}
+
+.ui.label {
+    background-color: #eeeeee;
+}
+
+.article > .header > img {
+    width: 100%;
+    height: auto;
+}
+
+.article > h1 {
+    width: 70%;
+    font-size: 36px;
+}
