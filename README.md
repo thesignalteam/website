@@ -1,5 +1,5 @@
 # thesignal-alpha
-Code and docker environment for the revamped The Sign.al
+Code and Docker environment for the revamped The Sign.al.
 
 ### IDE
 [WebStorm](https://www.jetbrains.com/webstorm/) from JetBrains is highly recommended.
