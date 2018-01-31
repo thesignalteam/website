@@ -2,7 +2,7 @@ version: '2'
 
 services:
   ghost:
-    image: ghost
+    image: ghost:1.20.3
     container_name: thesignal-ghost-container
     volumes:
       - ./content/data:/var/lib/ghost/content/data
