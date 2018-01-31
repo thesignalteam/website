@@ -15,6 +15,7 @@ To start the Ghost CMS on your local machine,
 3. Run `docker-compose pull` to get the Docker image of Ghost (1.20.3).
 4. Run `docker-compose up -d` to start Ghost.
 5. Point your web browser to `http://localhost:4001`.
+6. When you're done, run `docker-compose down -d` to shut down the local server.
 
 ### Development
 Feel free to play around with the production environment. **Any change you make will not affect the actual `thesign.al` site**, but note that:
