@@ -15,3 +15,11 @@ services:
     environment:
       - NODE_ENV=development
       - NPM_CONFIG_LOGLEVEL=debug
+  static:
+    image: nginx:1.13.8
+    container_name: thesignal-static-server-container
+    volumes:
+      - ./style:/var/www/style
+      - ./configs/default.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "4002:80"
