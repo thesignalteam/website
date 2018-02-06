@@ -17,6 +17,10 @@ To start the Ghost CMS on your local machine,
 5. Point your web browser to `http://localhost:4001`.
 6. When you're done, run `docker-compose down -d` to shut down the local server.
 
+### 
+Docker will sprawl two processes:
+
+
 ### Development
 Feel free to play around with the production environment. **Any change you make will not affect the actual `thesign.al` site**, but note that:
 1. Development happens inside the `src` folder. **If you make changes to files in the `src` folder, they should be automatically reflected on your local Ghost server**.
