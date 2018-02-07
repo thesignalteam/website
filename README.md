@@ -17,7 +17,7 @@ To start the Ghost CMS on your local machine,
 5. Run `docker-compose up -d` to start Ghost.
 6. Ghost will be running at `http://localhost:4001`.
 7. Nginx will be running at `http://localhost:4002`. This is a static server of files under `styles`. 
-8. When you're done, run `docker-compose down -d` to shut down the local server.
+8. When you're done, run `docker-compose down` to shut down the local server.
 
 #### Running on Windows
 1. Disable Hyper-V.
