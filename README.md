@@ -1,5 +1,5 @@
 # thesignal-alpha
-Code and Docker environment for the revamped The Sign.al.
+Code and Docker environment for the revamped The Sign.al. <br>
 This repository contains submodules. Don't forget to `git pull --recurse-submodules`.
 
 ### IDE
