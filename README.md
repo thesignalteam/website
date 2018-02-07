@@ -11,7 +11,7 @@ The Sign.al website runs on [Ghost](https://ghost.org/), a open-sourced blogging
 ### Setting Up The Environment
 To start the Ghost CMS on your local machine,
 1. Download and install [Docker](https://www.docker.com/docker-mac) if you haven't already.
-2. To get a local copy of the repository and the submodules, run `git pull --recurse-submodules`.
+2. To get a local copy of the repository and the submodules, run `git submodule update --init --recursive`.
 3. Open your terminal and `cd` into the current directory. 
 4. Run `docker-compose pull` to get the Docker image of Ghost (1.20.3) and Nginx (1.13.8).
 5. Run `docker-compose up -d` to start Ghost.
