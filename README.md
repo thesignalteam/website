@@ -1,5 +1,6 @@
 # thesignal-alpha
 Code and Docker environment for the revamped The Sign.al.
+This repository contains submodules. Don't forget to `git pull --recurse-submodules`.
 
 ### IDE
 [WebStorm](https://www.jetbrains.com/webstorm/) from JetBrains is highly recommended.
@@ -15,7 +16,7 @@ To start the Ghost CMS on your local machine,
 3. Run `docker-compose pull` to get the Docker image of Ghost (1.20.3) and Nginx (1.13.8).
 4. Run `docker-compose up -d` to start Ghost.
 5. Ghost will be running at `http://localhost:4001`.
-6. Nginx will be running at `http://localhost:4002`. This is a static server of files under `mockups`. 
+6. Nginx will be running at `http://localhost:4002`. This is a static server of files under `styles`. 
 7. When you're done, run `docker-compose down -d` to shut down the local server.
 
 #### Running on Windows
