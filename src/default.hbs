@@ -21,11 +21,20 @@
 		{{ghost_head}}
 	</head>
 	<body class="{{body_class}}">
-		{{! insert header partial}}
-		{{> header}}
-		{{{body}}}
-		{{! insert footer partial}}
-		{{> footer}}
+        <!--<div id="content-flex">-->
+            {{! insert header partial}}
+            {{> header}}
+            <!--<div id="sidebar-container">-->
+                <!--<div id="sidebar">-->
+                    <!--<h1 id="page-title">signal</h1>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div id="content-body">-->
+            {{{body}}}
+            {{! insert footer partial}}
+            {{> footer}}
+            <!--</div>-->
+        <!--</div>-->
         <h1>{{@blog.url}}</h1>
 
 		{{! scripts}}

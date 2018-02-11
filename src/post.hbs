@@ -29,12 +29,21 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-offset-1 col-md-10" align="center">
-						<div class="post-content">
-                            start content
-							{{content}}
-                            end content
-						</div>
+					<div class="col-md-offset-1 col-md-10">
+                        <div id="content-flex">
+                            <div id="sidebar-container">
+                                <!--<div id="sidebar">-->
+                                    <h1 id="page-title">{{@blog.title}}</h1>
+                                <p>1)	The perks of being a "jack-of-all-trades."	Read > </p>
+                                <p> 2)	How Cracking the Coding Interview got started.	Read ></p>
+                                <!--</div>-->
+                            </div>
+                            <div class="content-body">
+                                <div class="post-content">
+                                    {{content}}
+                                </div>
+                            </div>
+                        </div>
 						{{> share-links}}
 						<div class="about-author-wrap">
 							{{> about-author}}
