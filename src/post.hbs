@@ -14,8 +14,7 @@
 								{{tags separator=", "}}
 							</span>
 							{{/if}}
-							<h1 class="title">{{title}}</h2>
-							
+							<h2 class="title">{{title}}</h2>
 							<div class="post-meta">
 								{{#author}}
 								<a class="author" href="{{url}}" rel="author">
@@ -30,9 +29,11 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-offset-1 col-md-10">
+					<div class="col-md-offset-1 col-md-10" align="center">
 						<div class="post-content">
+                            start content
 							{{content}}
+                            end content
 						</div>
 						{{> share-links}}
 						<div class="about-author-wrap">
