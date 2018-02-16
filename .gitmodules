@@ -1,6 +1,3 @@
 [submodule "private"]
 	path = private
 	url = https://github.com/linzhiq/thesignal-alpha-private
-[submodule "style"]
-	path = style
-	url = https://github.com/linzhiq/thesignal-style-guide

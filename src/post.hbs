@@ -3,55 +3,63 @@
 
 <!-- start content area -->
 {{#post}}
-    <div class="main-content-area single-post">
-        <article>
-            <div class="post-head{{#unless feature_image}} no-image{{/unless}}"
-                 {{#if feature_image}}style="background-image:url({{feature_image}});"{{/if}}>
-                <div class="container align-center">
-                    <div class="row">
-                        <div class="col-md-offset-1 col-md-10">
-                            {{#if tags}}
-                                <span class="category">
-                                    {{tags separator=", "}}
-                                </span>
-                            {{/if}}
-                            <h1 class="title">{{title}}</h2>
-
-                                <div class="post-meta">
-                                    {{#author}}
-                                        <a class="author" href="{{url}}" rel="author">
-                                            <span class="name">{{name}}</span>
-                                        </a>
-                                    {{/author}}
-                                    <time class="time" datetime="{{date format="YYYY-MM-DD HH:MM:SS"}}"
-                                          itemprop="datePublished">{{date format="MMMM DD, YYYY"}}</time>
-                                    <span class="readtime">{{reading_time}}</span>
+	<div class="main-content-area single-post">
+		<article>
+			<div class="post-head{{#unless feature_image}} no-image{{/unless}}" {{#if feature_image}}style="background-image:url({{feature_image}});"{{/if}}>
+				<div class="container align-center">
+					<div class="row">
+						<div class="col-md-offset-1 col-md-10">
+							{{#if tags}}
+							<span class="category">
+								{{tags separator=", "}}
+							</span>
+							{{/if}}
+							<h2 class="title">{{title}}</h2>
+							<div class="post-meta">
+								{{#author}}
+								<a class="author" href="{{url}}" rel="author">
+									<span class="name">{{name}}</span>
+								</a>
+								{{/author}}
+								<time class="time" datetime="{{date format="YYYY-MM-DD HH:MM:SS"}}" itemprop="datePublished">{{date format="MMMM DD, YYYY"}}</time>
+                                <span class="readtime">{{reading_time}}</span>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-1 col-md-10">
+                        <div id="content-flex">
+                            <div id="sidebar-container">
+                                <!--<div id="sidebar">-->
+                                    <h1 id="page-title">{{@blog.title}}</h1>
+                                <p>1)	The perks of being a "jack-of-all-trades."	Read > </p>
+                                <p> 2)	How Cracking the Coding Interview got started.	Read ></p>
+                                <!--</div>-->
+                            </div>
+                            <div class="content-body">
+                                <div class="post-content">
+                                    {{content}}
                                 </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-offset-1 col-md-10">
-                        <div class="post-content">
-                            {{content}}
-                        </div>
-                        {{> share-links}}
-                        <div class="about-author-wrap">
-                            {{> about-author}}
-                        </div>
-                        <div class="subscribe-box-wrap">
-                            {{> subscribe-form}}
-                        </div>
-                        {{> prev-next}}
-                        <div class="comment-wrap">
-                            {{> comment}}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
-    </div>
+						{{> share-links}}
+						<div class="about-author-wrap">
+							{{> about-author}}
+						</div>
+						<div class="subscribe-box-wrap">
+							{{> subscribe-form}}
+						</div>
+						{{> prev-next}}
+						<div class="comment-wrap">
+							{{> comment}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+</div>
 {{/post}}
 <!-- end content area -->
