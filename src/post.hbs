@@ -3,52 +3,55 @@
 
 <!-- start content area -->
 {{#post}}
-	<div class="main-content-area single-post">
-		<article>
-			<div class="post-head{{#unless feature_image}} no-image{{/unless}}" {{#if feature_image}}style="background-image:url({{feature_image}});"{{/if}}>
-				<div class="container align-center">
-					<div class="row">
-						<div class="col-md-offset-1 col-md-10">
-							{{#if tags}}
-							<span class="category">
-								{{tags separator=", "}}
-							</span>
-							{{/if}}
-							<h1 class="title">{{title}}</h2>
-							
-							<div class="post-meta">
-								{{#author}}
-								<a class="author" href="{{url}}" rel="author">
-									<span class="name">{{name}}</span>
-								</a>
-								{{/author}}
-								<time class="time" datetime="{{date format="YYYY-MM-DD HH:MM:SS"}}" itemprop="datePublished">{{date format="MMMM DD, YYYY"}}</time>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-offset-1 col-md-10">
-						<div class="post-content">
-							{{content}}
-						</div>
-						{{> share-links}}
-						<div class="about-author-wrap">
-							{{> about-author}}
-						</div>
-						<div class="subscribe-box-wrap">
-							{{> subscribe-form}}
-						</div>
-						{{> prev-next}}
-						<div class="comment-wrap">
-							{{> comment}}
-						</div>
-					</div>
-				</div>
-			</div>
-		</article>
-</div>
+    <div class="main-content-area single-post">
+        <article>
+            <div class="post-head{{#unless feature_image}} no-image{{/unless}}"
+                 {{#if feature_image}}style="background-image:url({{feature_image}});"{{/if}}>
+                <div class="container align-center">
+                    <div class="row">
+                        <div class="col-md-offset-1 col-md-10">
+                            {{#if tags}}
+                                <span class="category">
+                                    {{tags separator=", "}}
+                                </span>
+                            {{/if}}
+                            <h1 class="title">{{title}}</h2>
+
+                                <div class="post-meta">
+                                    {{#author}}
+                                        <a class="author" href="{{url}}" rel="author">
+                                            <span class="name">{{name}}</span>
+                                        </a>
+                                    {{/author}}
+                                    <time class="time" datetime="{{date format="YYYY-MM-DD HH:MM:SS"}}"
+                                          itemprop="datePublished">{{date format="MMMM DD, YYYY"}}</time>
+                                    <span class="readtime">{{reading_time}}</span>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-10">
+                        <div class="post-content">
+                            {{content}}
+                        </div>
+                        {{> share-links}}
+                        <div class="about-author-wrap">
+                            {{> about-author}}
+                        </div>
+                        <div class="subscribe-box-wrap">
+                            {{> subscribe-form}}
+                        </div>
+                        {{> prev-next}}
+                        <div class="comment-wrap">
+                            {{> comment}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
 {{/post}}
 <!-- end content area -->
