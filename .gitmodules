@@ -2,5 +2,5 @@
 	path = private
 	url = https://github.com/linzhiq/thesignal-alpha-private
 [submodule "style"]
-    url = https://github.com/linzhiq/thesignal-style-guide
-    active = true
+	path = style
+	url = https://github.com/linzhiq/thesignal-style-guide.git
