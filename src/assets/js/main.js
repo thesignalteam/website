@@ -83,6 +83,12 @@
     2. Initialization
     ===========================*/
     $(document).ready(function(){
+        $('.ui.sticky')
+            .sticky({
+                context: '#article-content',
+                pushing: true
+            })
+        ;
     	themeApp.init();
     });
 }(jQuery));
