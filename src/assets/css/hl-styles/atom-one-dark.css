@@ -99,23 +99,23 @@ hue-6-2: #e6c07b
   display: -webkit-flex;
 }
 
-#sidebar-container {
-  width: 20%;
-  height: 300px;
-  position: sticky;
-  top: 60px;
-  padding-right: 10px;
+/*#sidebar-container {*/
+  /*width: 20%;*/
+  /*height: 300px;*/
+  /*position: sticky;*/
+  /*top: 60px;*/
+  /*padding-right: 10px;*/
   /*position: relative;*/
 }
 
-#sidebar {
-  /*position: sticky;*/
-  top: 0;
-  width: 100px;
-}
+/*#sidebar {*/
+  /*!*position: sticky;*!*/
+  /*top: 0;*/
+  /*width: 100px;*/
+/*}*/
 
-#content-body {
-  width: 80%
-  flex: 1;
-  -webkit-flex: 1;
-}
+/*#content-body {*/
+  /*width: 70%*/
+  /*flex: 1;*/
+  /*-webkit-flex: 1;*/
+/*}*/

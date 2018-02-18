@@ -6,21 +6,24 @@
 				<!-- start logo -->
 				{{#if @blog.logo}}
 				<a class="logo image-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="NOM NOM NOM"></a>
-				{{else}}
+                {{/if}}
 				<a class="logo text-logo" href="{{@blog.url}}">{{@blog.title}}</a>
-				{{/if}}
+
+                <div class="ui right aligned container">
+                {{navigation}}
+                <!--<div class="nav-right pull-right align-right">-->
+                    <span class="search-toggle" id="search-button" data-toggle="modal" data-target="#searchmodal"><i class="fa fa-search align-center"></i></span>
+                    <span class="mobile-menu-toggle hidden-md hidden-lg" id="nav-toggle-button"><i class="fa fa-bars align-center"></i></span>
+                <!--</div>-->
+                <nav class="mobile-menu visible-sm visible-xs" id="mobile-menu"></nav>
+                <div class="backdrop hidden-md hidden-lg" id="backdrop">
+                    <span class="menu-close align-center"><i class="fa fa-arrow-left"></i></span>
+                </div>
+                </div>
 				<!-- end logo -->
 			</div>
 			{{! insert navigation partial}}
-			{{navigation}}
-			<div class="nav-right pull-right align-right">
-				<span class="search-toggle" id="search-button" data-toggle="modal" data-target="#searchmodal"><i class="fa fa-search align-center"></i></span>
-				<span class="mobile-menu-toggle hidden-md hidden-lg" id="nav-toggle-button"><i class="fa fa-bars align-center"></i></span>
-			</div>
-			<nav class="mobile-menu visible-sm visible-xs" id="mobile-menu"></nav>
-			<div class="backdrop hidden-md hidden-lg" id="backdrop">
-				<span class="menu-close align-center"><i class="fa fa-arrow-left"></i></span>
-			</div>
+
 		</div>
 	</div>
 </header>

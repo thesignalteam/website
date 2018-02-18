@@ -2,30 +2,28 @@
 <footer class="site-footer">
     <div class="footer-top">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    {{> widget-recentpost}}
-                </div>
-                <div class="col-sm-4">
-                    {{> widget-tagcloud}}
-                </div>
-                <div class="col-sm-4">
-                    {{> widget-text}}
+            <div class="ui two column centered grid">
+                <div class="column">
+                    {{> widget-subscribe}}
                 </div>
             </div>
         </div>
     </div>
     <div class="footer-bottom">
-		<div class="container">
-            <div class="footer-bottom-wrap clearfix">
-                <div class="social-links-wrap">
-                    {{> social-links}}
-                </div>
-                <div class="copyright-info">
-                    &copy; {{date format="YYYY"}} <a href="{{@blog.url}}">{{@blog.title}}</a>. All right Reserved.
-                    Powered by <a href="https://ghost.org/">Ghost</a>
+        <div class="ui center aligned grid">
+            <div class="column">
+                <div class="ui center aligned container">
+                <header class="site-header" id="main-navbar">
+                    <div class="row">{{navigation}}</div>
+                </header>
                 </div>
             </div>
+        </div>
+		<div class="ui four column center aligned grid">
+                <div class="column">
+                    <a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}
+                    <!--Powered by <a href="https://ghost.org/">Ghost</a>-->
+                </div>
 		</div>
 	</div>
 </footer>
