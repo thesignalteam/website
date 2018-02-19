@@ -1,17 +1,20 @@
-<div class="widget">
-	<h4 class="widget-title h6">Subscribe to {{@blog.title}}</h4>
-	<div class="content tagcloud">
-	{{#if @labs.subscribers}}
-		<section class="gh-subscribe">
-			<p>Get the latest posts delivered right to your inbox.</p>
-			{{subscribe_form
-				form_class="sign-up-form"
-				input_class="form-control"
-				button_class="btn btn-primary"
-				placeholder="Enter your email..."
-			}}
-		</section>
-	{{/if}}
- </div>
+<div class="centered row">
+    <div class="six wide column">
+        <h4>Subscribe to The Signal</h4>
+        <p>Get the latest posts delivered right to your inbox.</p>
+
+        <form class="ui form">
+            <div class="inline fields">
+                <div class="sixteen wide field">
+                    <input type="text" name="subscriber-email" placeholder="Your email address">
+                </div>
+                <div class="two wide field">
+                    <div class="ui secondary basic button">Subscribe</div>
+                </div>
+            </div>
+        </form>
+    </div>
 </div>
+
+
 <!-- end end widget -->

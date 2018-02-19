@@ -1,15 +1,23 @@
 <!-- start pagination -->
-<div class="row">
-	<div class="col-md-12">
-		<div class="pagination-wrap align-center clearfix" role="navigation">
-			{{#if prev}}
-			<a class="newer-posts btn btn-default btn-sm" href="{{page_url prev}}"> <i class="fa fa-long-arrow-left fa-fw"></i> <span>Newer  Articles</span></a>
-			{{/if}}
-			<span class="page-number">Page {{page}} of {{pages}}</span>
-			{{#if next}}
-			<a class="older-posts btn btn-default btn-sm" href="{{page_url next}}"><span>Older  Articles</span> <i class="fa fa-long-arrow-right fa-fw"></i></a>
-			{{/if}}
-		</div>
-	</div>
+<div class="six wide column"></div>
+<div class="four wide column">
+    {{#if prev}}
+        <div class="ui animated button" href="{{page_url prev}}">
+            <div class="visible content">NEWER</div>
+            <!--<div class="hidden content">-->
+                <!--<i class="left arrow icon"></i>-->
+            <!--</div>-->
+        </div>
+    {{/if}}
+    PAGE {{page}}
+    {{#if next}}
+        <a class="ui animated button" href="{{page_url next}}">
+            <div class="visible content">OLDER</div>
+            <!--<div class="hidden content">-->
+                <!--OLDER <i class="right arrow icon"></i>-->
+            <!--</div>-->
+        </a>
+    {{/if}}
 </div>
+<div class="six wide column"></div>
 <!-- end pagination -->

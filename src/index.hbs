@@ -1,13 +1,28 @@
 {{!< default}}
-{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+<div class="ui stackable grid">
 
-{{#is "home"}}
-{{> cover-home}}
-{{/is}}
-<!-- start content area -->
-<div class="main-content-area">
-	<div class="container post-listing">
-		{{> loop}}
-	</div>
+    <!-- Space to breathe *hmm*, then subscribe bar -->
+    <div class="column row"></div>
+    {{!> widget-subscribe}}
+
+
+    <!--featured article bar and article-->
+    <div class="centered row">
+        <div class="twelve wide column">
+        <br><br>
+        <!--trending articles bar-->
+        <div class="ui secondary pointing right menu">
+            <a class="active item">LATEST</a>
+            <div class="right menu">
+                <a class="ui item">Articles</a>
+                <a class="ui item">Interviews</a>
+                <a class="ui item">Penn</a>
+                <a class="ui item">More ></a>
+            </div>
+        </div>
+    </div>
 </div>
-<!-- end content area -->
+<br><br>
+{{> loop}}
+<br><br><br>
+</div>

@@ -1,35 +1,59 @@
-<div class="row is-flex">
-	{{#foreach posts}}
-	<div class="col-sm-6 col-md-4 col-xs-12">
-		<article class="post post-card">
-			{{#if feature_image}}
-			<a href="{{url absolute="true"}}" class="permalink">
-				<div class="featured-image" style="background-image: url({{feature_image}})"></div>
-			</a>
-			{{/if}}
-			<div class="content-wrap">
-				<div class="entry-header align-center">
-					{{#if tags}}
-					<span class="category">{{tags separator=", "}}</span>
-					{{/if}}
-					<h3 class="title h4"><a href="{{url absolute="true"}}" rel="bookmark">{{title}}</a></h3>
-				</div>
-				<div class="entry-footer clearfix">
-					{{#author}}
-					<div class="author">
-						<a href="{{url}}" rel="author">
-							<img class="avatar" src="{{profile_image}}" alt="avatar">
-							<span class="name">{{name}}</span>
-						</a>
-					</div>
-					{{/author}}
-					<div class="published-date">
-						<time class="time" datetime="{{date format="YYYY-MM-DD HH:MM:SS"}}">{{date format="MMMM DD, YYYY"}}</time>
-					</div>
-				</div>
-			</div>
-		</article>
-	</div>
-	{{/foreach}}
+<div class="two wide column"></div>
+<div class="twelve wide column">
+    <div class="ui link cards">
+        {{#foreach posts}}
+            <div class="ui card">
+
+                <!--image-->
+                {{#if feature_image}}
+                    <a class="image" href="{{url absolute="true"}}">
+                        <img src="{{feature_image}}"></img>
+                    </a>
+
+                {{/if}}
+                <div class="content">
+
+                    <!--title-->
+                    <a class="header" href="{{url absolute="true"}}">{{title}}</a>
+
+                    <!--author-->
+                    {{#author}}
+                        <div class="meta">
+                            <a href="{{url}}" rel="author">
+
+                                <!--profile image-->
+                                {{#if profile_image}}
+                                    <img class="avatar" src="{{profile_image}}" alt="avatar">
+                                {{else}}
+                                    <i class="user circle outline"></i>
+                                {{/if}}
+                                <span class="name">{{name}}</span>
+                            </a>
+                            <!--date-->
+                            | <time class="time" datetime="{{date format="YYYY-MM-DD HH:MM:SS"}}">{{date format="MMM DD, YYYY"}}</time>
+                        </div>
+                    {{/author}}
+
+                    <!--preview-->
+                    <div class="description">
+                        {{#if meta_description}}
+                            <p>{{meta_description}} <a class="read-more" href="{{url}}"></a></p>
+                        {{else}}
+                            <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}"></a></p>
+                        {{/if}}
+                    </div>
+                </div>
+                {{#if tags}}
+                    <div class="extra content">
+                        <span class="category">{{tags separator=", "}}</span>
+                    </div>
+                {{/if}}
+            </div>
+        {{/foreach}}
+    </div>
 </div>
+<div class="two wide column"></div>
+
+<br><br>
 {{pagination}}
+<br><br>
