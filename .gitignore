@@ -1,2 +1,6 @@
 logs/*
-*/ghost.db
+**/ghost.db
+*/node_module/*
+.idea/**
+.DS_Store
+

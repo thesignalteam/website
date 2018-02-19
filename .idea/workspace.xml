@@ -2,16 +2,118 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ea966f5-222c-44f2-854d-cbbafd7f7562" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/home.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/jsLibraryMappings.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/runConfigurations/bin_www.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/app.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/bin/www" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/public/stylesheets/style.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/routes/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/routes/users.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/views/error.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/views/index.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/views/layout.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/style" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.gitmodules" afterPath="$PROJECT_DIR$/.gitmodules" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/api/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/thesignal-alpha.iml" afterPath="$PROJECT_DIR$/api/.idea/api.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/content/data/ghost.db" afterPath="$PROJECT_DIR$/content/data/ghost.db" />
+      <change beforePath="$PROJECT_DIR$/mockups/elements.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-bold.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-bold.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-bold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-bold.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-bold.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-bolditalic.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-bolditalic.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-bolditalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-bolditalic.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-bolditalic.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-book.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-book.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-book.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-book.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-book.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-bookitalic.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-bookitalic.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-bookitalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-bookitalic.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-bookitalic.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-extrabold.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-extrabold.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-extrabold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-extrabold.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-extrabold.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-extrabolditalic.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-extrabolditalic.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-extrabolditalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-extrabolditalic.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-extrabolditalic.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-heavy.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-heavy.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-heavy.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-heavy.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-heavy.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-heavyitalic.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-heavyitalic.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-heavyitalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-heavyitalic.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-heavyitalic.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-italic.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-italic.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-italic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-italic.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-italic.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-light.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-light.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-light.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-light.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-light.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-lightitalic.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-lightitalic.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-lightitalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-lightitalic.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-lightitalic.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-medium.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-medium.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-medium.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-medium.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-medium.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-mediumitalic.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-mediumitalic.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-mediumitalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-mediumitalic.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-mediumitalic.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-regular.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-regular.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-regular.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-regular.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-semibold.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-semibold.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-semibold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-semibold.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-semibold.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-semibolditalic.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-semibolditalic.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-semibolditalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-semibolditalic.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/fonts/cerebrisans-semibolditalic.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/images/Another-Fence-Headshot-2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/images/sal-khan.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/images/vivienne-ming.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/semantic.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/semantic.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mockups/static/thesignal.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/screen.css" afterPath="$PROJECT_DIR$/src/assets/css/screen.css" />
       <change beforePath="$PROJECT_DIR$/src/default.hbs" afterPath="$PROJECT_DIR$/src/default.hbs" />
-      <change beforePath="$PROJECT_DIR$/src/index.hbs" afterPath="$PROJECT_DIR$/src/index.hbs" />
-      <change beforePath="$PROJECT_DIR$/src/partials/footer.hbs" afterPath="$PROJECT_DIR$/src/partials/footer.hbs" />
-      <change beforePath="$PROJECT_DIR$/src/partials/header.hbs" afterPath="$PROJECT_DIR$/src/partials/header.hbs" />
-      <change beforePath="$PROJECT_DIR$/src/partials/loop.hbs" afterPath="$PROJECT_DIR$/src/partials/loop.hbs" />
-      <change beforePath="$PROJECT_DIR$/src/partials/pagination.hbs" afterPath="$PROJECT_DIR$/src/partials/pagination.hbs" />
-      <change beforePath="$PROJECT_DIR$/src/partials/widget-subscribe.hbs" afterPath="$PROJECT_DIR$/src/partials/widget-subscribe.hbs" />
+      <change beforePath="$PROJECT_DIR$/src/partials/comment.hbs" afterPath="$PROJECT_DIR$/src/partials/comment.hbs" />
+      <change beforePath="$PROJECT_DIR$/src/post.hbs" afterPath="$PROJECT_DIR$/src/post.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,17 +131,7 @@
         <entry file="file://$PROJECT_DIR$/src/default.hbs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
-              <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="error.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/error.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="31" column="20" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -50,16 +142,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
               <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cover-home.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/partials/cover-home.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -94,7 +176,7 @@
         <entry file="file://$PROJECT_DIR$/src/partials/loop.hbs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="810">
-              <caret line="54" column="20" lean-forward="true" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
+              <caret line="54" column="20" lean-forward="false" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -104,7 +186,7 @@
         <entry file="file://$PROJECT_DIR$/src/partials/pagination.hbs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+              <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -120,11 +202,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.hbs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="footer.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/partials/footer.hbs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+              <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitmodules" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitmodules">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -173,6 +275,7 @@
         <option value="$PROJECT_DIR$/src/partials/footer.hbs" />
         <option value="$PROJECT_DIR$/src/partials/pagination.hbs" />
         <option value="$PROJECT_DIR$/src/default.hbs" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -187,6 +290,7 @@
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -278,12 +382,12 @@
       <updated>1518042392877</updated>
       <workItem from="1518042394425" duration="4646000" />
       <workItem from="1518241648271" duration="2482000" />
-      <workItem from="1518890358783" duration="19751000" />
+      <workItem from="1518890358783" duration="19940000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26879000" />
+    <option name="totallyTimeSpent" value="27068000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -296,7 +400,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24907847" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -575,7 +679,7 @@
     <entry file="file://$PROJECT_DIR$/src/partials/pagination.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -583,7 +687,7 @@
     <entry file="file://$PROJECT_DIR$/src/default.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <caret line="31" column="20" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -604,7 +708,7 @@
     <entry file="file://$PROJECT_DIR$/src/partials/loop.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
-          <caret line="54" column="20" lean-forward="true" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
+          <caret line="54" column="20" lean-forward="false" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -612,7 +716,23 @@
     <entry file="file://$PROJECT_DIR$/src/partials/footer.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitmodules">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
           <folding />
         </state>
       </provider>
