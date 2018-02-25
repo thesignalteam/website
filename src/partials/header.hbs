@@ -2,24 +2,20 @@
 <header class="site-header" id="main-navbar">
 	<div class="container">
 		<div class="row">
-			<div class="navbar-header">
+			<div class="ui top fixed menu" style="text-align: right">
 				<!-- start logo -->
 				{{#if @blog.logo}}
 				<a class="logo image-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="NOM NOM NOM"></a>
                 {{/if}}
 				<a class="logo text-logo" href="{{@blog.url}}">{{@blog.title}}</a>
 
-                <div class="ui right aligned container">
+                <!--<div class="nav">-->
                 {{navigation}}
-                <!--<div class="nav-right pull-right align-right">-->
-                    <span class="search-toggle" id="search-button" data-toggle="modal" data-target="#searchmodal"><i class="fa fa-search align-center"></i></span>
-                    <span class="mobile-menu-toggle hidden-md hidden-lg" id="nav-toggle-button"><i class="fa fa-bars align-center"></i></span>
+
+                <!--<div class="ui search"><input class="prompt" type="text" placeholder="Search"><div class="results"></div></div>-->
+                <!--<span class="search-toggle" id="search-button" data-toggle="modal" data-target="#searchmodal"><i class="fa fa-search align-right"></i></span>-->
                 <!--</div>-->
-                <nav class="mobile-menu visible-sm visible-xs" id="mobile-menu"></nav>
-                <div class="backdrop hidden-md hidden-lg" id="backdrop">
-                    <span class="menu-close align-center"><i class="fa fa-arrow-left"></i></span>
-                </div>
-                </div>
+
 				<!-- end logo -->
 			</div>
 			{{! insert navigation partial}}

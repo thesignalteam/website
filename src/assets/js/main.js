@@ -85,8 +85,7 @@
     $(document).ready(function(){
         $('.ui.sticky')
             .sticky({
-                context: '#article-content',
-                pushing: true
+                context: '#article-content'
             })
         ;
     	themeApp.init();
