@@ -1,13 +1,13 @@
 <nav class="ui compact right aligned text menu">
-    <a class="item">Home</a>
-    <a class="item">Projects</a>
-    <a class="item">About</a>
+    {{#foreach navigation}}
+        <a class="item" href="{{url absolute="true"}}">{{label}}</a>
+    {{/foreach}}
     <!--<span class="search-toggle" id="search-button" data-toggle="modal" data-target="#searchmodal"><i class="fa fa-search align-right"></i></span>-->
-    <div class="ui category search item">
-        <div class="ui transparent icon input">
-            <input class="prompt" type="text" placeholder="Search...">
-            <i class="search link icon"></i>
-        </div>
-        <div class="results"></div>
-    </div>
+    <!--<div class="ui category search item">-->
+        <!--<div class="ui transparent icon input">-->
+            <!--<input class="prompt" type="text" placeholder="Search...">-->
+            <!--<i class="search link icon"></i>-->
+        <!--</div>-->
+        <!--<div class="results"></div>-->
+    <!--</div>-->
 </nav>
