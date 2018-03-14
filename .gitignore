@@ -1,7 +1,7 @@
 logs/*
-**/ghost.db
+*/ghost.db
 */node_module/*
-.idea/**
+.idea/*
 .DS_Store
 .idea/workspace.xml
 content/data/ghost.db
