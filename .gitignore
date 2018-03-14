@@ -3,5 +3,5 @@ logs/*
 */node_module/*
 .idea/**
 .DS_Store
-**/workspace.xml
+.idea/workspace.xml
 content/data/ghost.db
