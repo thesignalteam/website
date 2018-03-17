@@ -9,33 +9,52 @@
     <!--featured article bar and article-->
     <div class="centered row">
         <div class="twelve wide column">
+
             <div class="ui secondary pointing right menu">
                 <a class="active item">FEATURED</a>
             </div>
+            {{#get "posts" filter="featured:true" as |featured|}}
+            {{#foreach posts}}
+
             <br>
-            <div class="ui card" style="min-width: 100%; height: auto">
+            <div class="ui link card" style="min-width: 100%; height: auto" >
                 <div class="ui grid">
-                    <div class="eight wide column">
-                        <div class="ui medium image" style="width: 100%;">
-                            <img style="width: 100%;" src="/content/images/2017/07/vivienne-ming.jpg">
+                    {{#if feature_image}}
+                        <div class="eight wide column">
+                            <a class="ui medium image" style="width: 100%;" href="{{url absolute="true"}}">
+                                <img style="width: 100%;" src="{{feature_image}}">
+                            </a>
                         </div>
-                    </div>
+                    {{/if}}
+
                     <div class="eight wide column">
                         <div class="content" style="padding: 1rem;">
-                            <a class="header">Finding Purpose Through Reincarnations and Transitions</a>
+                          <a class="header" href="{{url absolute="true"}}">{{title}}</a>
                             <div class="meta">
-                                <span class="date">Laura Gao | July 31, 2017</span>
-                            </div>
+                              <span class="name">{{name}}</span>
+                              <!--date-->
+                              | <time class="time" datetime="{{date format="YYYY-MM-DD HH:MM:SS"}}">{{date format="MMM DD, YYYY"}}</time>
+                          </div>
                             <div class="description">
-                                After dropping out and becoming homeless, Dr. Vivienne Ming got a Ph.D., became a transgender rights advocate, and devoted her life to researching purpose.
+                              {{#if meta_description}}
+                                  <p>{{meta_description}} <a class="read-more" href="{{url}}"></a></p>
+                              {{else}}
+                                  <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}"></a></p>
+                              {{/if}}
                             </div>
-                            <div class="extra content">
-                                <span><a class="article-type">INTERVIEW</a> | <span class="tags"><a>LGBT</a>, <a>Data Science</a>, <a>Career Transformation</a></span></span>
-                            </div>
+                            {{#if tags}}
+                                <div class="extra content">
+                                    {{tags separator=", "}}
+                                </div>
+                            {{/if}}
                         </div>
                     </div>
                 </div>
             </div>
+            {{/foreach}}
+            {{/get}}
+
+
             <br>
             <!--trending articles bar-->
             <div class="ui secondary pointing right menu">
@@ -62,4 +81,3 @@
         </div>
     </div>
 </div>
-
