@@ -1,0 +1,65 @@
+{{!< default}}
+<div class="ui stackable grid">
+
+    <!-- Space to breathe *hmm*, then subscribe bar -->
+    <div class="column row"></div>
+    {{> widget-subscribe}}
+
+
+    <!--featured article bar and article-->
+    <div class="centered row">
+        <div class="twelve wide column">
+            <div class="ui secondary pointing right menu">
+                <a class="active item">FEATURED</a>
+            </div>
+            <br>
+            <div class="ui card" style="min-width: 100%; height: auto">
+                <div class="ui grid">
+                    <div class="eight wide column">
+                        <div class="ui medium image" style="width: 100%;">
+                            <img style="width: 100%;" src="/content/images/2017/07/vivienne-ming.jpg">
+                        </div>
+                    </div>
+                    <div class="eight wide column">
+                        <div class="content" style="padding: 1rem;">
+                            <a class="header">Finding Purpose Through Reincarnations and Transitions</a>
+                            <div class="meta">
+                                <span class="date">Laura Gao | July 31, 2017</span>
+                            </div>
+                            <div class="description">
+                                After dropping out and becoming homeless, Dr. Vivienne Ming got a Ph.D., became a transgender rights advocate, and devoted her life to researching purpose.
+                            </div>
+                            <div class="extra content">
+                                <span><a class="article-type">INTERVIEW</a> | <span class="tags"><a>LGBT</a>, <a>Data Science</a>, <a>Career Transformation</a></span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!--trending articles bar-->
+            <div class="ui secondary pointing right menu">
+                <a class="active item">LATEST</a>
+                <div class="right menu">
+                    <a class="ui item">Articles</a>
+                    <a class="ui item">Interviews</a>
+                    <a class="ui item">Penn</a>
+                    <a class="ui item">More ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    {{> loop}}
+    <br><br><br>
+    <div class="centered row">
+        <div class="twelve wide column">
+            <div class="ui secondary pointing right menu">
+                <a class="active item">TAGS</a>
+            </div>
+            <br>
+            {{> widget-tagcloud}}
+        </div>
+    </div>
+
+

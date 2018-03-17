@@ -1,8 +1,14 @@
 <!-- start tag widget -->
-<div class="widget">
-	<h4 class="widget-title h6">Tag Cloud</h4>
-	<div class="content tagcloud">
-		{{#get "tags" limit="all" order="name asc"}}{{tags separator="" }}{{/get}}
-	</div>
-</div>
+
+
+
+    {{#get "tags" limit="all" order="name asc"}}
+        {{#foreach tags}}
+            <a class="ui button" href="{{url}}">
+                {{name}}
+            </a>
+        {{/foreach}}
+        {{/get}}
+
+
 <!-- end tag widget -->

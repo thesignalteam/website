@@ -831,6 +831,10 @@ dt {
   margin-left: 12px;
   position: relative;
 }
+.single-post .post-head .post-meta .readtime {
+  margin-left: 12px;
+  position: relative;
+}
 .single-post .post-head .post-meta .time:before {
   content: '';
   width: 1px;
