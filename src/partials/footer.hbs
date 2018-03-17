@@ -1,28 +1,16 @@
 <!-- start footer -->
 <footer class="site-footer">
-    <div class="footer-top">
-        <div class="container">
-            <div class="ui two column centered grid">
-                <div class="column">
-                    {{> widget-subscribe}}
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="footer-bottom">
-
-        <div class="container">
-            <div class="footer-bottom-wrap clearfix">
-                <div class="social-links-wrap">
-                    {{> social-links}}
-                </div>
-                <div class="copyright-info">
-                     <a href="{{@blog.url}}">The Sign.al &copy; 2017-2018</a>
+        <div class="ui center aligned grid">
+            <div class="column">
+                <div class="ui center aligned container">
+                    {{navigation}}
                 </div>
             </div>
         </div>
+        <div class="ui four column center aligned grid">
+            <div class="column">
+                <a href="{{@blog.url}}">The Sign.al &copy; 2017-2018</a>
+            </div</div>
     </div>
-
 </footer>
-<!-- end footer -->
-<span class="back-to-top pull-right" id="back-to-top"><i class="fa fa-angle-up"></i></span>
