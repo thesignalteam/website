@@ -1,63 +1,58 @@
 <div class="centered row">
-    <div class="twelve wide column">
-        <div class="ui three doubling cards centered">
-            {{#foreach posts}}
-                <div class="ui card">
-
-                    <!--image-->
-                    {{#if feature_image}}
-                        <a class="image" href="{{url absolute="true"}}">
-                            <img src="{{feature_image}}"></img>
-                        </a>
-
-                    {{/if}}
-                    <div class="content">
-
-                        <!--title-->
-                        <a class="header" href="{{url absolute="true"}}">{{title}}</a>
-
-                        <!--author-->
-                        {{#author}}
-                            <div class="meta">
-                                <a href="{{url}}" rel="author">
-
-                                    <!--profile image-->
-                                    {{#if profile_image}}
-                                        <img class="avatar" src="{{profile_image}}" alt="avatar">
-                                    {{else}}
-                                        <i class="user circle outline"></i>
-                                    {{/if}}
-                                    <span class="name">{{name}}</span>
-                                </a>
-                                <!--date-->
-                                | <time class="time" datetime="{{date format="YYYY-MM-DD HH:MM:SS"}}">{{date format="MMM DD, YYYY"}}</time>
-                            </div>
-                        {{/author}}
-
-                        <!--preview-->
-                        <div class="description">
-                            {{#if meta_description}}
-                                <p>{{meta_description}} <a class="read-more" href="{{url}}"></a></p>
-                            {{else}}
-                                <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}"></a></p>
-                            {{/if}}
-                        </div>
-                    </div>
-                    {{#if tags}}
-                        <div class="extra content">
-                            {{tags separator=", "}}
-                        </div>
-                    {{/if}}
-                </div>
-            {{/foreach}}
-        </div>
-    </div>
+   <!-- center everything -->
+   <div class="twelve wide column">
+      <!-- the posts will be in the middle 12 -->
+      <div class="ui three doubling stackable cards centered">
+         {{#foreach posts}}
+         <div class="ui link card">
+            <!--image-->
+            {{#if feature_image}}
+            <a class="image" href="{{url absolute="true"}}">
+              <img src="{{feature_image}}"></img>
+            </a>
+            {{/if}}
+            <div class="content">
+               <!--title-->
+               <a class="header" href="{{url absolute="true"}}">{{title}}</a>
+               <!--author-->
+               {{#author}}
+               <div class="meta">
+                  <a href="{{url}}" rel="author">
+                     <!--profile image-->
+                     {{#if profile_image}}
+                     <img class="avatar" src="{{profile_image}}" alt="avatar">
+                     {{else}}
+                     <i class="user circle outline"></i>
+                     {{/if}}
+                     <span class="name">{{name}}</span>
+                  </a>
+                  <!--date-->
+                  | <time class="time" datetime="{{date format="YYYY-MM-DD HH:MM:SS"}}">{{date format="MMM DD, YYYY"}}</time>
+               </div>
+               {{/author}}
+               <!--preview-->
+               <div class="description">
+                  {{#if meta_description}}
+                  <p>{{meta_description}} <a class="read-more" href="{{url}}"></a></p>
+                  {{else}}
+                  <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}"></a></p>
+                  {{/if}}
+               </div>
+            </div>
+            {{#if tags}}
+            <div class="extra content">
+               {{tags separator=", "}}
+            </div>
+            {{/if}}
+         </div>
+         {{/foreach}}
+      </div>
+   </div>
 </div>
 <br><br>
-
 <div class="centered row">
-    <div class="four wide column">
-        {{pagination}}
-    </div>
+   <div align="center">
+      {{pagination}}
+   </div>
 </div>
 <br><br>

@@ -1,19 +1,19 @@
 <!-- start pagination -->
 {{#if prev}}
-    <div class="ui animated button" href="{{page_url prev}}">
-        <div class="visible content">NEWER</div>
-        <!--<div class="hidden content">-->
-        <!--<i class="left arrow icon"></i>-->
-        <!--</div>-->
+  <a class="ui animated button" href="{{page_url prev}}">
+    <div class="visible content">NEWER</div>
+    <div class="hidden content">
+      <i class="left arrow icon"></i>
     </div>
+  </a>
 {{/if}}
-PAGE {{page}}
+    PAGE {{page}}
 {{#if next}}
-    <a class="ui animated button" href="{{page_url next}}">
-        <div class="visible content">OLDER</div>
-        <!--<div class="hidden content">-->
-        <!--OLDER <i class="right arrow icon"></i>-->
-        <!--</div>-->
-    </a>
+  <a class="ui animated button" href="{{page_url next}}">
+    <div class="visible content">OLDER</div>
+    <div class="hidden content">
+      <i class="right arrow icon"></i>
+    </div>
+  </a>
 {{/if}}
 <!-- end pagination -->

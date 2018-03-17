@@ -1,7 +1,13 @@
-<nav class="main-menu hidden-sm hidden-xs" id="main-menu">
-	<ul>
-		{{#foreach navigation}}
-		<li class="{{slug}}{{#if current}} current-menu-item{{/if}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
-		{{/foreach}}
-	</ul>
+<nav class="ui compact right aligned text menu">
+    {{#foreach navigation}}
+        <a class="item" href="{{url absolute="true"}}">{{label}}</a>
+    {{/foreach}}
+    <!--<span class="search-toggle" id="search-button" data-toggle="modal" data-target="#searchmodal"><i class="fa fa-search align-right"></i></span>-->
+    <!--<div class="ui category search item">-->
+        <!--<div class="ui transparent icon input">-->
+            <!--<input class="prompt" type="text" placeholder="Search...">-->
+            <!--<i class="search link icon"></i>-->
+        <!--</div>-->
+        <!--<div class="results"></div>-->
+    <!--</div>-->
 </nav>

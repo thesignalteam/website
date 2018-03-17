@@ -1,74 +1,33 @@
-<div class="prev-next-wrap {{#next_post}}has-next{{/next_post}} {{#prev_post}}has-prev{{/prev_post}}">
-	<div class="row is-flex">
-	{{#prev_post}}
-		<div class="col-sm-6 col-xs-12">
-			<article class="post post-card">
-				<div class="prev-next-link align-center">
-					<a class="" href="{{url absolute="true"}}">Previous Post</a>
-				</div>
-				{{#if feature_image}}
-				<a href="{{url absolute="true"}}" class="permalink">
-					<div class="featured-image" style="background-image: url({{feature_image}})"></div>
-				</a>
-				{{/if}}
-				<div class="content-wrap">
-					<div class="entry-header align-center">
-						{{#if tags}}
-						<span class="category">{{tags separator=", "}}</span>
-						{{/if}}
-						<h3 class="title h4"><a href="{{url absolute="true"}}" rel="bookmark">{{title}}</a></h3>
-					</div>
-					<div class="entry-footer clearfix">
-						{{#author}}
-						<div class="author">
-							<a href="{{url}}" rel="author">
-								<img class="avatar" src="{{profile_image}}" alt="avatar">
-								<span class="name">{{name}}</span>
-							</a>
-						</div>
-						{{/author}}
-						<div class="published-date">
-							<time class="time" datetime="{{date format="YYYY-MM-DD HH:MM:SS"}}">{{date format="MMMM DD, YYYY"}}</time>
-						</div>
-					</div>
-				</div>
-			</article>
-		</div>
-		{{/prev_post}}
-		{{#next_post}}
-		<div class="col-sm-6 col-xs-12">
-			<article class="post post-card">
-				<div class="prev-next-link align-center">
-					<a class="" href="{{url absolute="true"}}">Next Post</a>
-				</div>
-				{{#if feature_image}}
-				<a href="{{url absolute="true"}}" class="permalink">
-					<div class="featured-image" style="background-image: url({{feature_image}})"></div>
-				</a>
-				{{/if}}
-				<div class="content-wrap">
-					<div class="entry-header align-center">
-						{{#if tags}}
-						<span class="category">{{tags separator=", "}}</span>
-						{{/if}}
-						<h3 class="title h4"><a href="{{url absolute="true"}}" rel="bookmark">{{title}}</a></h3>
-					</div>
-					<div class="entry-footer clearfix">
-						{{#author}}
-						<div class="author">
-							<a href="{{url}}" rel="author">
-								<img class="avatar" src="{{profile_image}}" alt="avatar">
-								<span class="name">{{name}}</span>
-							</a>
-						</div>
-						{{/author}}
-						<div class="published-date">
-							<time class="time" datetime="{{date format="YYYY-MM-DD HH:MM:SS"}}">{{date format="MMMM DD, YYYY"}}</time>
-						</div>
-					</div>
-				</div>
-			</article>
-		</div>
-		{{/next_post}}
-	</div>
-</div>
+{{#next_post}}
+		<div class="column">
+            <!--<br/><br/>  &lt;!&ndash; Space to breathe *hmm* &ndash;&gt;-->
+            <div class="post-card ui card">
+                {{#if feature_image}}
+                    <a href="{{url absolute="true"}}" class="permalink">
+                        <div class="featured-image" style="background-image: url({{feature_image}})"></div>
+                    </a>
+                {{/if}}
+                <div class="content">
+                    <h3 class="title h4"><a href="{{url absolute="true"}}" rel="bookmark">{{title}}</a></h3>
+                    <div class="meta">
+                        {{#author}}
+                            <a class="author" href="{{url}}" rel="author">
+                                <span class="name">{{name}}</span>
+                            </a>
+                        {{/author}}
+                        <time class="time" datetime="{{date format="YYYY-MM-DD HH:MM:SS"}}" itemprop="datePublished">| {{date format="MMMM DD, YYYY"}}</time>
+                    </div>
+                    <div class="description">
+                        After dropping out and becoming homeless, Dr. Vivienne Ming got a Ph.D., became a transgender rights
+                        advocate, and devoted her life to researching purpose.
+                    </div>
+                </div>
+                <div class="extra content">
+                    <span><a class="article-type">INTERVIEW</a> |
+                    {{#if tags}}
+                        <span class="category">{{tags separator=", "}}</span>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+{{/next_post}}

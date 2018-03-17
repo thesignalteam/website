@@ -83,6 +83,44 @@
     2. Initialization
     ===========================*/
     $(document).ready(function(){
-    	themeApp.init();
+        $('.ui.sticky')
+            .sticky({
+                context: '#article-content'
+            })
+        ;
+        var strong = $("#content strong");
+        function scroll_to_anchor(anchor_id){
+            var tag = $("#" + anchor_id + "");
+            $('html,body').animate({scrollTop: tag.offset().top},'slow');
+        }
+        var sidebar = $('#sidebar');
+        jQuery.each(strong, function(i, val) {
+            console.log(strong[i]);
+            var strongSidebar = $(strong[i]).clone();
+            $(strongSidebar).wrapInner("<a href='#" + i + "' class='anchor'></a>");
+            $(strongSidebar).appendTo(sidebar);
+            sidebar.append("<br>");
+            sidebar.append("<br>");
+            return (i<2);
+        });
+
+        $(strong).each(function(index, element){
+            $(this).wrapInner("<div id='" + index + "' class='anchor'></div>");
+        });
+
+        var sidebarAnchors = $('#sidebar, .anchor');
+        $(sidebarAnchors).each(function(index, element) {
+            $(sidebarAnchors[index]).click(function(event) {
+                var id = $('#' + index + "");
+                console.log(id);
+                console.log($(id));
+                var contentAnchors = $('#content', id);
+                event.preventDefault();
+                console.log(id.offset());
+                $('html,body').animate({scrollTop: (id).offset().top},'slow');
+            })
+        });
+
+        themeApp.init();
     });
 }(jQuery));
