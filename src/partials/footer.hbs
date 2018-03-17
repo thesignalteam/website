@@ -10,16 +10,17 @@
         </div>
     </div>
     <div class="footer-bottom">
-
-        <div class="container">
-            <div class="footer-bottom-wrap clearfix">
-                <div class="social-links-wrap">
-                    {{> social-links}}
+        <div class="ui center aligned grid">
+            <div class="column">
+                <div class="ui center aligned container">
+                    {{navigation}}
                 </div>
-                <div class="copyright-info">
-                    &copy; {{date format="YYYY"}} <a href="{{@blog.url}}">{{@blog.title}}</a>. All right Reserved.
-                    Powered by <a href="https://ghost.org/">Ghost</a>
-                </div>
+            </div>
+        </div>
+        <div class="ui four column center aligned grid">
+            <div class="column">
+                <a href="{{@blog.url}}">{{@blog.title}}</a> &copy; 2017-{{date format="YYYY"}}
+                <!--Powered by <a href="https://ghost.org/">Ghost</a>-->
             </div>
         </div>
     </div>
