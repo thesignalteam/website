@@ -4,82 +4,65 @@
 <!-- start content area -->
 {{#post}}
 	<div class="main-content-area single-post">
-		<article>
+        <div class="ui container">
+		<!--<article>-->
 			<div class="post-head{{#unless feature_image}} no-image{{/unless}}" {{#if feature_image}}style="background-image:url({{feature_image}});"{{/if}}>
 			</div>
 			<div class="container">
 				<div class="row">
                     <div class="ui centered grid">
-                    <div class="four wide center aligned column">
-                    </div>
-
-                    <div class="twelve wide column left aligned">
-                        <!--<div class="ui container">-->
-                            <div class="ui segment" id="article-content" style="border-color: transparent">
-                                <div class="left ui rail">
-                                    <div class="ui sticky">
-                                        <div class="sidebar">
-                                            <div class="ui segment" id="sidebar" style="padding-top: 100px; border-color: transparent">
-                                                <h4 class="ui header">TABLE OF CONTENTS</h4>
-                                                <a class="item">Right out of Penn, you got this wonderful dream...</a><br>
-                                                <a class="item">What prompted you to switch jobs?</a><br>
-                                                <a class="item">Is that what prompted you to get your MBA?</a><br>
-                                                <br>
-                                                {{> social-links}}
+                        <div class="four wide center aligned column">
+                        </div>
+                        <div class="twelve wide column left aligned">
+                            <!--<div class="ui container">-->
+                                <div class="ui basic segment" id="article-content" style="border-color: transparent">
+                                    <div class="left ui rail">
+                                        <div class="ui sticky">
+                                            <div class="sidebar">
+                                                <div class="ui basic segment" id="sidebar" style="padding-top: 100px; border-color: transparent">
+                                                    <h4 class="ui header">TABLE OF CONTENTS</h4>
+                                                    {{> social-links}}
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!--<div class="ui left aligned container">-->
-                                    <!--<div class="row">-->
                                         <div class="post meta">
+                                            <span class="article-type">INTERVIEW</span>&nbsp;&nbsp;
                                             {{#if tags}}
                                                 <span class="category">
                                                     {{tags separator=", "}}
                                                 </span>
                                             {{/if}}
-                                            <h1 class="ui huge header">{{title}}</h1>
-
-                                            <!--<div class="post-meta">-->
+                                            <h1>{{title}}</h1>
+                                            <div class="post-meta">
                                             {{#author}}
                                                 <a class="author" href="{{url}}" rel="author">
                                                     <span class="name">{{name}}</span>
                                                 </a>
                                             {{/author}}
                                             <time class="time" datetime="{{date format="YYYY-MM-DD HH:MM:SS"}}" itemprop="datePublished">| {{date format="MMMM DD, YYYY"}}</time>
-                                            <!--</div>-->
+                                            </div>
                                         </div>
-                                <br>
-                                    <!--<div id="cool"><h1>cool story bro</h1></div>-->
-                                    <!--<script>-->
-                                        <!--alert($("cool").hasClass("h1"));-->
-                                    <!--</script>-->
-                                    {{content}}
-                                <!--</div>-->
+                                        <br><br/>
+                                    <div class="content" id="content">
+                                        {{content}}
+                                    </div>
+                                </div>
+                                <br><br/>
+                                <div class="ui grid">
+                                        <div class="five wide column"><h3>AUTHOR</h3>{{> about-author}}</div>
+                                        <div class="five wide column"><h3>READ MORE</h3>{{> prev-next}}</div>
+                                        <div class="five wide column"><h3 style="visibility:hidden">READ MORE</h3>{{> prev-next}}</div>
+                                </div>
                             </div>
-                        <!--<div class="ui left aligned text container">-->
-                            <!---->
-                        <!--</div>-->
-                    <!--</div>-->
-                    </div>
-
+                        </div>
 					</div>
 				</div>
-            </div>
-        </article>
-        <br>
-            <div class="ui stackable centered grid">
-                <div class="four wide column">
-                    {{> about-author}}
-                </div>
-                <div class="four wide column">
-                    {{> prev-next}}
-                </div>
-                <div class="four wide column">
-                    {{> prev-next}}
-                </div>
-			</div>
+            <!--</div>-->
+        <!--</article>-->
+
 		<!--</article>-->
+        </div>
 </div>
 {{/post}}
 <!-- end content area -->

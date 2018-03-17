@@ -1,33 +1,27 @@
 <!-- start about the author -->
 {{#author}}
-<div class="about-author clearfix">
-	{{#if profile_image}}
-		<a href="{{url}}" title="{{name}}"><img src="{{profile_image}}" alt="Author image" class="avatar pull-left"></a>
-		{{else}}
-		<a href="{{url}}" title="{{name}}"><img src="{{asset "images/default-user-image.jpg"}}" alt="Author image" class="avatar pull-left"></a>
-	{{/if}}
-	<div class="details">
-		<h4 class="author h4">About <a href="{{url}}">{{name}}</a></h4>
-		{{#if bio}}
-		<div class="bio">
-			{{bio}}
-		</div>
-		{{/if}}
-		<ul class="meta-info">
-			{{#if twitter}}
-			<li><a href="{{twitter_url}}" target="_blank"><i class="fa fa-twitter"></i></a></li>
-			{{/if}}
-			{{#if facebook}}
-			<li><a href="{{facebook_url}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
-			{{/if}}
-			{{#if website}}
-			<li class="website"><a href="{{website}}" target="_blank"><i class="fa fa-globe"></i></a></li>
-			{{/if}}
-			{{#if location}}
-			<li class="location"><i class="fa fa-map-marker"></i>{{location}}</li>
-			{{/if}}
-		</ul>
-	</div>
-</div>
+    <div class="column">
+        <!--<br/><br/>-->
+        <div class="post-card ui card align-center">
+            <br><br/>
+            {{#if profile_image}}
+                <a href="{{url}}" title="{{name}}"><img src="{{profile_image}}" alt="Author image" class="avatar"></a>
+            {{else}}
+                <a href="{{url}}" title="{{name}}"><img src="{{asset "images/default-user-image.jpg"}}" alt="Author image" class="avatar"></a>
+            {{/if}}
+            <h2 class="header">{{name}}</h2>
+                <a href="https://www.lauraygao.com"><i class="external link alternate icon"></i>lauraygao.com</a>
+                <br><br/>
+            {{#if bio}}
+                <div class="bio">
+                    {{bio}}
+                </div>
+            {{/if}}
+            <br><br/>
+            <div class="ui bottom attached button"><h5><a href="{{url}}">MORE</a></h5></div>
+
+
+        </div>
+    </div>
 {{/author}}
 <!-- end about the author -->
