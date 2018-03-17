@@ -21,41 +21,6 @@
                                             <div class="sidebar">
                                                 <div class="ui basic segment" id="sidebar" style="padding-top: 100px; border-color: transparent">
                                                     <h4 class="ui header">TABLE OF CONTENTS</h4>
-                                                    <script>
-                                                        $(document).ready(function(){
-                                                            var strong = $("#content strong");
-                                                            function scroll_to_anchor(anchor_id){
-                                                                var tag = $("#" + anchor_id + "");
-                                                                $('html,body').animate({scrollTop: tag.offset().top},'slow');
-                                                            }
-                                                            var sidebar = $('#sidebar');
-                                                            jQuery.each(strong, function(i, val) {
-                                                                console.log(strong[i]);
-                                                                var strongSidebar = $(strong[i]).clone();
-                                                                $(strongSidebar).wrapInner("<a href='#" + i + "' class='anchor'></a>");
-                                                                $(strongSidebar).appendTo(sidebar);
-                                                                sidebar.append("<br>");
-                                                                sidebar.append("<br>");
-                                                                return (i<2);
-                                                            });
-
-                                                            $(strong).each(function(index, element){
-                                                                $(this).wrapInner("<div id='" + index + "' class='anchor'></div>");
-                                                            });
-
-                                                            var sidebarAnchors = $('#sidebar, .anchor');
-                                                            $(sidebarAnchors).each(function(index, element) {
-                                                                $(sidebarAnchors[index]).click(function(event) {
-                                                                    var id = $('#' + index + "");
-                                                                    console.log(id);
-                                                                    event.preventDefault();
-                                                                    console.log(id.offset());
-                                                                    $('html,body').animate({scrollTop: (id).offset().top},'slow');
-                                                                })
-                                                            });
-
-                                                        });
-                                                    </script>
                                                     {{> social-links}}
                                                 </div>
                                             </div>
