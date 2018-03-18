@@ -11,24 +11,13 @@
 					<a class="logo text-logo" href="{{@blog.url}}">{{@blog.title}}</a>
 					{{/if}}
 
-
 					<nav class="ui compact right aligned text menu">
-						<!--navigation -->
 						{{navigation}}
-
-						<span class="ui primary test item" data-target="#searchmodal">
-							<i class="search icon"></i>
-						</span>
-						<!-- search -->
 						{{> search-modal-sem}}
-						<span class="item" data-toggle="modal" data-target="#searchmodal">
-							<i class="search icon"></i>
-						</span>
 					</nav>
 				</div>
 			</div>
 		</div>
 	</div>
 </header>
-{{> search-modal}}
 <!-- end header -->

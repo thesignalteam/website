@@ -1,29 +1,27 @@
+<!-- icon -->
+<span class="ui primary search item" data-target="#searchmodal" id="searchbutton">
+  <i class="search icon"></i>
+</span>
 
-
-<div class="ui special modal transition" id="searchmodal">
+<div class="ui modal longer special transition" id="searchmodal">
   <i class="close icon"></i>
-  <div class="header">
-    Search
-  </div>
+  <div class="header">Search</div>
 
 <!-- fluid, loading: https://semantic-ui.com/modules/search.html -->
-  <div class="content">
+  <div class="scrolling content">
     <div class="ui search">
       <div class="ui icon input">
-        <input type="text" id="search-input" placeholder="Enter to Search ...">
+        <input name="article-search" type="text" id="search-input" placeholder="Enter to Search ...">
         <i class="search icon"></i>
       </div>
       <div class="results"></div>
     </div>
 
-    <div id="search-results"></div>
+    <div id="search-results"><ulclass=""></ul></div>
   </div>
 
 
 
-  <div class="actions">
-    <div class="ui black deny button">
-      Close
-    </div>
-  </div>
+  <div class="actions"><div class="ui black deny button">Close</div>
+</div>
 </div>

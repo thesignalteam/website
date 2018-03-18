@@ -1,10 +1,9 @@
 
-// modal
-$('.special.modal')
-  .modal('attach events', '.ui.primary.test.item')
+// search modal
+$('#searchmodal')
+  .modal('attach events', '.ui.primary.search.item')
   .modal('setting', 'transition', 'horizontal flip')
 ;
-
 
 /*====================================================
   TABLE OF CONTENT
@@ -48,11 +47,11 @@ $('.special.modal')
         },
         siteSearch: function() {
             var searchInput = $('#search-input');
-            $('#searchmodal').on('shown.bs.modal', function(){
-                searchInput.focus();
-            })
             var searchField = searchInput.ghostHunter({
                 results: "#search-results",
+                onComplete: function(results) {
+                  $('#searchmodal').modal('refresh');
+                },
                 zeroResultsInfo : false,
                 onKeyUp         : true,
                 onPageLoad      : true,
@@ -63,7 +62,6 @@ $('.special.modal')
             $('#searchmodal').on('hidden.bs.modal', function() {
                  searchField.clear();
             });
-						console.log("evoked siteSearch in main.js");
         },
         backToTop: function() {
             $(window).scroll(function(){
