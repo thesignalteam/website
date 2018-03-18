@@ -3,20 +3,19 @@
 	<div class="container">
 		<div class="row">
 			<div class="ui top fixed menu" style="text-align: right">
-				<!-- start logo -->
-				{{#if @blog.logo}}
-				<a class="logo image-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}"></a>
-                {{/if}}
-				<a class="logo text-logo" href="{{@blog.url}}">{{@blog.title}}</a>
 
-                <!--<div class="nav">-->
-                {{navigation}}
-
-
-				<!-- end logo -->
+					<!--  logo -->
+					{{#if @blog.logo}}
+					<a class="logo image-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}"></a>
+					{{else}}
+					<a class="logo text-logo" href="{{@blog.url}}">{{@blog.title}}</a>
+					{{/if}}
+					<nav class="ui compact right aligned text menu">
+						{{navigation}}
+						{{> search-modal-sem}}
+					</nav>
+				</div>
 			</div>
-			{{! insert navigation partial}}
-
 		</div>
 	</div>
 </header>

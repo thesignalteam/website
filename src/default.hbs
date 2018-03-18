@@ -10,6 +10,8 @@
 
 		<!-- stylesheets -->
 		{{! Styles'n'Scripts }}
+
+		<!-- <link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap.min.css"}}"> -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="{{asset "css/font-awesome.min.css"}}">
 		<link rel="stylesheet" type="text/css" href="{{asset "css/hl-styles/atom-one-dark.css"}}">
@@ -22,12 +24,10 @@
 		{{ghost_head}}
 
 	</head>
-    <body class="{{body_class}}">
-        {{! insert header partial}}
-        {{> header}}
-        {{{body}}}
-        {{! insert footer partial}}
-        {{> footer}}
+	<body class="{{body_class}}">
+	  {{> header}}
+	  {{{body}}}
+	  {{> footer}}
 
 		{{! scripts}}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>

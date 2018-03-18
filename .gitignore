@@ -4,4 +4,9 @@ content/data/ghost.db
 .idea/*
 .DS_Store
 .idea/workspace.xml
+<<<<<<< HEAD
 content/data/ghost.db
+=======
+content/data/ghost.db
+content/data/ghost.db
+>>>>>>> master
