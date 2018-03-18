@@ -1,3 +1,11 @@
+
+// modal
+$('.special.modal')
+  .modal('attach events', '.ui.primary.test.item')
+  .modal('setting', 'transition', 'horizontal flip')
+;
+
+
 /*====================================================
   TABLE OF CONTENT
   1. function declearetion
@@ -55,6 +63,7 @@
             $('#searchmodal').on('hidden.bs.modal', function() {
                  searchField.clear();
             });
+						console.log("evoked siteSearch in main.js");
         },
         backToTop: function() {
             $(window).scroll(function(){
