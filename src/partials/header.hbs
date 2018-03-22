@@ -3,30 +3,21 @@
 	<div class="container">
 		<div class="row">
 			<div class="ui top fixed menu" style="text-align: right">
-				<!-- start logo -->
-				{{#if @blog.logo}}
-				<a class="logo image-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}"></a>
-                {{else}}
-				<a class="logo text-logo" href="{{@blog.url}}">{{@blog.title}}</a>
-                {{/if}}
-                <!--<div class="nav">-->
-                {{navigation}}
-                <div class="nav-right pull-right align-right">
-                    <span class="search-toggle" id="search-button" data-toggle="modal" data-target="#searchmodal"><i class="fa fa-search align-center"></i></span>
-                    <span class="mobile-menu-toggle hidden-md hidden-lg" id="nav-toggle-button"><i class="fa fa-bars align-center"></i></span>
-                </div>
 
-                <!--<div class="ui search"><input class="prompt" type="text" placeholder="Search"><div class="results"></div></div>-->
-                <!--<span class="search-toggle" id="search-button" data-toggle="modal" data-target="#searchmodal"><i class="fa fa-search align-right"></i></span>-->
-                <!--</div>-->
+					<!--  logo -->
+					{{#if @blog.logo}}
+					<a class="logo image-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}"></a>
+					{{else}}
+					<a class="logo text-logo" href="{{@blog.url}}">{{@blog.title}}</a>
+					{{/if}}
 
-				<!-- end logo -->
+					<nav class="ui compact right aligned text menu">
+						{{navigation}}
+						{{> search-modal-sem}}
+					</nav>
+				</div>
 			</div>
-			{{! insert navigation partial}}
-
 		</div>
 	</div>
 </header>
 <!-- end header -->
-
-
