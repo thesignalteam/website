@@ -5,4 +5,5 @@ logs/*
 .DS_Store
 .idea/workspace.xml
 content/data/ghost.db
-content/data/ghost.db
+content/data/**
+content/data/*
