@@ -1,0 +1,35 @@
+{{!< default}}
+<div class="ui centered grid">
+    <div class="four wide right aligned column">
+        {{> social-links}}
+    </div>
+    <div class="twelve wide center aligned column">
+        <img class="ui huge image" src="content/images/2018/01/DSC_4425.jpg">
+    </div>
+</div>
+
+<div class="ui centered grid">
+    {{#foreach posts}}
+        <div class="four wide right aligned column">
+            <h4>2018</h4>
+        </div>
+        {{#if feature_image}}
+            <a class="image" href="{{url absolute="true"}}">
+                <img src="{{feature_image}}"></img>
+            </a>
+        {{/if}}
+        <!--<div class="four wide right aligned column">-->
+            <!--<img class="ui medium image" src="content/images/2018/01/DSC_4425.jpg">-->
+        <!--</div>-->
+        <div class="eight wide left aligned column">
+            <div class="ui basic segment">
+                <a class="header" href="{{url absolute="true"}}">{{title}}</a>
+                {{#if meta_description}}
+                    <p>{{meta_description}} <a class="read-more" href="{{url}}"></a></p>
+                {{else}}
+                    <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}"></a></p>
+                {{/if}}
+            </div>
+        </div>
+    {{/foreach}}
+</div>
