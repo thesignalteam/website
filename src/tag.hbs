@@ -1,9 +1,31 @@
 {{!< default}}
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
-{{> cover-tag}}
+{{!> cover-tag}}
 <!-- start content area -->
+
+
+
 <div class="ui stackable grid">
+
+  <div class="column row"></div>
+
+  <div class="centered row">
+      <div class="twelve wide column">
+          TAG: {{tag.name}}
+      </div>
+  </div>
+
+
+
+
+  <!-- we can have tag description as well, but we currently don't. -->
+  {{#if tag.description}}
+    <p class="tag-description">{{tag.description}}</p>
+  {{/if}}
+
     {{> loop}}
+
+    {{> widget-tagcloud}}
 </div>
 <!-- end content area -->
