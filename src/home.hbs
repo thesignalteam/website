@@ -63,20 +63,14 @@
                     <a class="ui item">Articles</a>
                     <a class="ui item">Interviews</a>
                     <a class="ui item">Penn</a>
-                    <a class="ui item">More ></a>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- article loop -->
     <br><br>
     {{> loop}}
     <br><br><br>
-    <div class="centered row">
-        <div class="twelve wide column">
-            <div class="ui secondary pointing right menu">
-                <a class="active item">TAGS</a>
-            </div>
-            {{> widget-tagcloud}}
-        </div>
-    </div>
+    {{> widget-tagcloud}}
 </div>
