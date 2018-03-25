@@ -1,35 +1,33 @@
 {{!< default}}
+<br/>
 <div class="ui centered grid">
-    <div class="four wide right aligned column">
+    <div class="two wide right aligned column">
         {{> social-links}}
     </div>
-    <div class="twelve wide center aligned column">
-        <img class="ui huge image" src="content/images/2018/01/DSC_4425.jpg">
+    <div class="ten wide center aligned column">
+        <img class="ui huge image" src="/content/images/2017/02/Signal-Logo-FB-banner.png">
     </div>
 </div>
 
 <div class="ui centered grid">
-    {{#foreach posts}}
-        <div class="four wide right aligned column">
+        <div class="two wide right aligned column">
             <h4>2018</h4>
         </div>
-        {{#if feature_image}}
-            <a class="image" href="{{url absolute="true"}}">
-                <img src="{{feature_image}}"></img>
-            </a>
-        {{/if}}
+        <div class="three wide right aligned column">
+            <img class="ui rounded image" src="/content/images/2018/01/DSC_4425.jpg">
+        </div>
         <!--<div class="four wide right aligned column">-->
             <!--<img class="ui medium image" src="content/images/2018/01/DSC_4425.jpg">-->
         <!--</div>-->
-        <div class="eight wide left aligned column">
+        <div class="seven wide left aligned column">
             <div class="ui basic segment">
-                <a class="header" href="{{url absolute="true"}}">{{title}}</a>
-                {{#if meta_description}}
-                    <p>{{meta_description}} <a class="read-more" href="{{url}}"></a></p>
-                {{else}}
-                    <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}"></a></p>
-                {{/if}}
+                <br/>
+                <br/>
+                <h2>The Website Relaunch</h2>
+                <a href="http://www.thesign.al">www.thesign.al</a>
+                <p><br/>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales, augue non facilisis tempor, nisl erat ullamcorper nisi, eget fermentum enim urna vitae ex. Phasellus faucibus mattis odio, in vehicula nunc venenatis nec. Pellentesque neque odio, pellentesque nec diam sed, finibus dapibus erat. Sed nec est porta, pretium elit ac, faucibus elit. Suspendisse mattis ligula a venenatis bibendum. Aenean quis velit nec purus lobortis efficitur. Maecenas sodales leo non diam porta, eget aliquet dui consectetur. Mauris eget viverra nisi, eu bibendum sapien.
+                </p>
             </div>
         </div>
-    {{/foreach}}
 </div>
