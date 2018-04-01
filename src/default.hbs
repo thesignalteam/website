@@ -17,15 +17,14 @@
 		{{ghost_head}}
 
 	</head>
-	<body class="{{body_class}}">
+	<body>
 	  {{> header}}
 	  {{{body}}}
 	  {{> footer}}
 
 		<!-- scripts -->
-		<!-- <script src="{{asset "js/bootstrap.min.js"}}"></script> -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.js"></script>
+		<script src="{{asset "style/semantic.min.js"}}"></script>
 		<script src="{{asset "js/plugins.js"}}"></script>
 		<script src="{{asset "js/main.js"}}"></script>
 		{{ghost_foot}}

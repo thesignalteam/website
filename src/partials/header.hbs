@@ -1,18 +1,20 @@
 <!-- start header -->
-<!--<header class="site-header" id="main-navbar">-->
-	<div class="ui top menu" style="text-align: right">
+<div class="ui text menu">
 
-			<!--  logo -->
-			{{#if @blog.logo}}
-			<a class="logo image-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}"></a>
-			{{else}}
-			<a class="logo text-logo" href="{{@blog.url}}">{{@blog.title}}</a>
-			{{/if}}
+	<!-- icon -->
+	<a href="{{@blog.url}}">
+	  <div class="item">
+	  	<img src="{{@blog.logo}}">
+	  </div>
+	</a>
 
-			<nav class="ui compact right aligned text menu">
-				{{navigation}}
-			</nav>
-			{{> search-modal-sem}}
-		</div>
-<!--</header>-->
-<!-- end header -->
+<!-- navigation menu on left -->
+  <div class="ui right dropdown item">
+		{{navigation}}
+	<!-- </nav> -->
+
+	{{> search-modal}}
+
+    </div>
+  </div>
+</div>
