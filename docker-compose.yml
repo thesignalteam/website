@@ -10,11 +10,13 @@ services:
       - ./logs:/var/lib/ghost/content/logs
       - ./src:/var/lib/ghost/content/themes/thesignal
       - ./configs/config.development.json:/var/lib/ghost/config.development.json
+      - ./style/static:/var/lib/ghost/content/themes/thesignal/assets/style
     ports:
       - "4001:2368"
     environment:
       - NODE_ENV=development
       - NPM_CONFIG_LOGLEVEL=debug
+
   static:
     image: nginx:1.13.8
     container_name: thesignal-static-server-container
