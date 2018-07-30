@@ -1,20 +1,19 @@
 <!-- start header -->
-<div class="ui text menu">
+<div class="ui text menu" id="header">
 
-	<!-- icon -->
-	<a href="{{@blog.url}}">
-	  <div class="item">
-	  	<img src="{{@blog.logo}}">
-	  </div>
-	</a>
+    <!-- icon -->
+    <a href="{{@blog.url}}" class="item">
+        <img id="logo" src="{{@blog.logo}}">
+        <div id="lockup">{{@blog.title}}</div>
+    </a>
 
-<!-- navigation menu on left -->
-  <div class="ui right dropdown item">
-		{{navigation}}
-	<!-- </nav> -->
 
-	{{> search-modal}}
+    <!-- navigation menu on left -->
+    <div class="ui right dropdown item">
+        {{navigation}}
+
+        {{> search-modal}}
 
     </div>
-  </div>
+</div>
 </div>
