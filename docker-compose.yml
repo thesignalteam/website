@@ -1,21 +1,22 @@
-version: '2'
+version: '3'
 
 services:
   ghost:
-    image: ghost:1.20.3
+    image: ghost:2.1
     container_name: thesignal-ghost-container
     volumes:
-      - ./content/data:/var/lib/ghost/content/data
-      - ./content/images:/var/lib/ghost/content/images
+      - ./content:/var/lib/ghost/content
       - ./logs:/var/lib/ghost/content/logs
       - ./src:/var/lib/ghost/content/themes/thesignal
-      - ./configs/config.development.json:/var/lib/ghost/config.development.json
       - ./style/static:/var/lib/ghost/content/themes/thesignal/assets/style
     ports:
       - "4001:2368"
     environment:
-      - NODE_ENV=development
-      - NPM_CONFIG_LOGLEVEL=debug
+      NODE_ENV: development
+#      - NPM_CONFIG_LOGLEVEL=debug
+      database__client: sqlite3
+      database__connection__filename: "/var/lib/ghost/content/data/ghost.db"
+      url: "http://beta.thesign.al/"
 
   static:
     image: nginx:1.13.8

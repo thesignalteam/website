@@ -1,0 +1,71 @@
+<div class="centered row">
+    <div class="fifteen wide column">
+
+        <div class="ui secondary pointing right menu">
+            <a class="active item">FEATURED</a>
+        </div>
+        {{#get "posts" include="authors,tags" filter="featured:true" as |featured|}}
+            {{#foreach posts}}
+
+                {{#if featured}}
+                    <div class="ui card featured">
+                        <div class="ui grid">
+                            <div class="eight wide column">
+                                <div class="ui medium image">
+                                    <img style="width: 100%;" src="{{feature_image}}">
+                                </div>
+                            </div>
+                            <div class="eight wide column">
+                                <div class="content">
+                                    <a class="header" href="{{url absolute="true"}}">{{title}}</a>
+
+                                    {{#foreach authors}}
+                                        <div class="meta">
+                                            <a href="{{url}}" rel="author">
+                                                <!--profile image-->
+                                                {{#if profile_image}}
+                                                    <img class="avatar" src="{{profile_image}}" alt="avatar">
+                                                {{else}}
+                                                    <i class="user circle outline"></i>
+                                                {{/if}}
+                                                <span class="name">{{name}}</span>
+                                            </a>
+                                            <span class="divider"> | </span>
+                                            <span class="date">{{date format="MMM DD, YYYY"}}</span>
+                                        </div>
+                                    {{/foreach}}
+                                    <div class="description">
+                                        {{#if meta_description}}
+                                            <p>{{meta_description}} <a class="read-more" href="{{url}}"></a></p>
+                                        {{else}}
+                                            <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}"></a></p>
+                                        {{/if}}
+                                    </div>
+                                    {{#if tags}}
+                                        <div class="extra content">
+                                            {{#if primary_tag}}
+                                                <span class="primary-tag">{{primary_tag.name}}</span>
+                                            {{else}}
+                                                <a class="article-type">N/A</a>
+                                            {{/if}}
+
+                                            {{#foreach tags from="2" to="4"}}
+                                                <span class="tag"><a href="{{url}}">{{name}}</a></span>
+                                            {{/foreach}}
+
+                                            <!--<span class="tag"><a>LGBT</a></span>-->
+                                            <!--<span class="tag"><a>Data Science</a></span>-->
+                                        </div>
+                                    {{/if}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {{/if}}
+
+            {{/foreach}}
+        {{/get}}
+        <br>
+        <!--trending articles bar-->
+    </div>
+</div>

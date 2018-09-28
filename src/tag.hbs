@@ -4,7 +4,7 @@
 {{!> cover-tag}}
 <!-- start content area -->
 
-
+{{> header}}
 
 <div class="ui stackable grid">
 
@@ -12,7 +12,17 @@
 
   <div class="centered row">
       <div class="twelve wide column">
-          TAG: {{tag.name}}
+          <a class="ui label heading" href="/">{{tag.name}}</a>
+      </div>
+
+      <div class="fourteen wide column">
+          {{#if tag.description}}
+              <p class="tag-description">{{tag.description}}</p>
+          {{/if}}
+
+          {{> loop}}
+
+          {{> widget-tagcloud}}
       </div>
   </div>
 
@@ -20,12 +30,5 @@
 
 
   <!-- we can have tag description as well, but we currently don't. -->
-  {{#if tag.description}}
-    <p class="tag-description">{{tag.description}}</p>
-  {{/if}}
-
-    {{> loop}}
-
-    {{> widget-tagcloud}}
 </div>
 <!-- end content area -->
