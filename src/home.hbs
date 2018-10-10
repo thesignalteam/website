@@ -1,83 +1,18 @@
 {{!< default}}
-<div class="ui stackable grid">
+{{> header}}
 
+<div class="ui grid" id="main">
     <!-- Space to breathe *hmm*, then subscribe bar -->
-    <div class="column row"></div>
-    {{> widget-subscribe}}
-
+    <div class="column row" id="subscribe-header">
+        {{> widget-subscribe}}
+    </div>
 
     <!--featured article bar and article-->
-    <div class="centered row">
-        <div class="twelve wide column">
+    {{> loop-featured}}
 
-            <div class="ui secondary pointing right menu">
-                <a class="active item">FEATURED</a>
-            </div>
-            {{#get "posts" filter="featured:true" as |featured|}}
-            {{#foreach posts}}
-
-            <br>
-            <div class="ui link card" style="min-width: 100%; height: auto" >
-                <div class="ui grid">
-                    {{#if feature_image}}
-                        <div class="eight wide column">
-                            <a class="ui medium image" style="width: 100%;" href="{{url absolute="true"}}">
-                                <img style="width: 100%;" src="{{feature_image}}">
-                            </a>
-                        </div>
-                    {{/if}}
-
-                    <div class="eight wide column">
-                        <div class="content" style="padding: 1rem;">
-                          <a class="header" href="{{url absolute="true"}}">{{title}}</a>
-                            <div class="meta">
-                              <span class="name">{{name}}</span>
-                              <!--date-->
-                              | <time class="time" datetime="{{date format="YYYY-MM-DD HH:MM:SS"}}">{{date format="MMM DD, YYYY"}}</time>
-                          </div>
-                            <div class="description">
-                              {{#if meta_description}}
-                                  <p>{{meta_description}} <a class="read-more" href="{{url}}"></a></p>
-                              {{else}}
-                                  <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}"></a></p>
-                              {{/if}}
-                            </div>
-                            {{#if tags}}
-                                <div class="extra content">
-                                    {{tags separator=", "}}
-                                </div>
-                            {{/if}}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {{/foreach}}
-            {{/get}}
-
-
-            <br>
-            <!--trending articles bar-->
-            <div class="ui secondary pointing right menu">
-                <a class="active item">LATEST</a>
-                <div class="right menu">
-                    <a class="ui item">Articles</a>
-                    <a class="ui item">Interviews</a>
-                    <a class="ui item">Penn</a>
-                    <a class="ui item">More ></a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- article loop -->
     <br><br>
     {{> loop}}
     <br><br><br>
-    <div class="centered row">
-        <div class="twelve wide column">
-            <div class="ui secondary pointing right menu">
-                <a class="active item">TAGS</a>
-            </div>
-            <br>
-            {{> widget-tagcloud}}
-        </div>
-    </div>
+    {{> widget-tagcloud}}
 </div>

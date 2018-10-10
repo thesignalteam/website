@@ -1,27 +1,31 @@
 <!-- start about the author -->
 {{#author}}
-    <div class="column">
-        <!--<br/><br/>-->
-        <div class="post-card ui card align-center">
-            <br><br/>
+    <div class="ui author card">
+        <div class="image">
             {{#if profile_image}}
-                <a href="{{url}}" title="{{name}}"><img src="{{profile_image}}" alt="Author image" class="avatar"></a>
+                <img src="{{profile_image}}">
             {{else}}
-                <a href="{{url}}" title="{{name}}"><img src="{{asset "images/default-user-image.jpg"}}" alt="Author image" class="avatar"></a>
+                <img src="{{asset "images/default-user-image.jpg"}}">
             {{/if}}
-            <h2 class="header">{{name}}</h2>
-                <a href="https://www.lauraygao.com"><i class="external link alternate icon"></i>lauraygao.com</a>
-                <br><br/>
+        </div>
+        <div class="content">
+            <a class="header" href="{{url absolute="true"}}">{{name}}</a>
+            <div class="meta">
+                <span class="icon link outline"></span>
+                <span class="url">{{website}}</span>
+            </div>
             {{#if bio}}
-                <div class="bio">
+                <div class="description">
                     {{bio}}
                 </div>
             {{/if}}
-            <br><br/>
-            <div class="ui bottom attached button"><h5><a href="{{url}}">MORE</a></h5></div>
-
 
         </div>
+        <div class="extra content">
+            <div class="ui secondary basic tiny button"><a href="{{url}}">Read More</a></div>
+        </div>
     </div>
+
+
 {{/author}}
 <!-- end about the author -->

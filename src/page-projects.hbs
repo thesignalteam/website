@@ -1,35 +1,111 @@
 {{!< default}}
-<div class="ui centered grid">
-    <div class="four wide right aligned column">
+
+{{> header}}
+
+<br/>
+<div class="ui centered grid" id="projects-header">
+    <div class="two wide right aligned column">
         {{> social-links}}
     </div>
-    <div class="twelve wide center aligned column">
-        <img class="ui huge image" src="content/images/2018/01/DSC_4425.jpg">
+    <div class="ten wide center aligned column">
+        <img class="ui huge image" id="marquee" src="{{asset "images/graphic_tower.svg"}}">
     </div>
 </div>
 
-<div class="ui centered grid">
-    {{#foreach posts}}
-        <div class="four wide right aligned column">
+<div class="ui centered grid" id="projects">
+    <div class="row">
+        <div class="two wide right aligned column">
             <h4>2018</h4>
         </div>
-        {{#if feature_image}}
-            <a class="image" href="{{url absolute="true"}}">
-                <img src="{{feature_image}}"></img>
-            </a>
-        {{/if}}
-        <!--<div class="four wide right aligned column">-->
-            <!--<img class="ui medium image" src="content/images/2018/01/DSC_4425.jpg">-->
-        <!--</div>-->
-        <div class="eight wide left aligned column">
-            <div class="ui basic segment">
-                <a class="header" href="{{url absolute="true"}}">{{title}}</a>
-                {{#if meta_description}}
-                    <p>{{meta_description}} <a class="read-more" href="{{url}}"></a></p>
-                {{else}}
-                    <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}"></a></p>
-                {{/if}}
+        <div class="three wide right aligned column">
+            <div class="ui rounded image">
+                <img>
             </div>
         </div>
-    {{/foreach}}
+        <!--<div class="four wide right aligned column">-->
+        <!--<img class="ui medium image" src="content/images/2018/01/DSC_4425.jpg">-->
+        <!--</div>-->
+        <div class="seven wide left aligned column">
+            <div class="ui basic segment">
+                <br/>
+                <br/>
+
+                <h2>The Website Relaunch</h2>
+                <span class="icon link outline colored"></span>
+                <a href="http://www.thesign.al">www.thesign.al</a>
+                <p><br/>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales, augue non facilisis
+                    tempor, nisl erat ullamcorper nisi, eget fermentum enim urna vitae ex. Phasellus faucibus mattis
+                    odio, in vehicula nunc venenatis nec. Pellentesque neque odio, pellentesque nec diam sed, finibus
+                    dapibus erat. Sed nec est porta, pretium elit ac, faucibus elit. Suspendisse mattis ligula a
+                    venenatis bibendum. Aenean quis velit nec purus lobortis efficitur. Maecenas sodales leo non diam
+                    porta, eget aliquet dui consectetur. Mauris eget viverra nisi, eu bibendum sapien.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="two wide right aligned column">
+            <h4></h4>
+        </div>
+        <div class="three wide right aligned column">
+            <div class="ui rounded image">
+                <img>
+            </div>
+        </div>
+        <!--<div class="four wide right aligned column">-->
+        <!--<img class="ui medium image" src="content/images/2018/01/DSC_4425.jpg">-->
+        <!--</div>-->
+        <div class="seven wide left aligned column">
+            <div class="ui basic segment">
+                <br/>
+                <br/>
+                <h2>One-Year Anniversary Feature</h2>
+
+                <span class="icon link outline colored"></span>
+                <a href="http://www.thesign.al">www.thesign.al/pages/anniversary</a>
+                <p><br/>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales, augue non facilisis
+                    tempor, nisl erat ullamcorper nisi, eget fermentum enim urna vitae ex. Phasellus faucibus mattis
+                    odio, in vehicula nunc venenatis nec. Pellentesque neque odio, pellentesque nec diam sed, finibus
+                    dapibus erat. Sed nec est porta, pretium elit ac, faucibus elit. Suspendisse mattis ligula a
+                    venenatis bibendum. Aenean quis velit nec purus lobortis efficitur. Maecenas sodales leo non diam
+                    porta, eget aliquet dui consectetur. Mauris eget viverra nisi, eu bibendum sapien.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="two wide right aligned column">
+            <h4>2017</h4>
+        </div>
+        <div class="three wide right aligned column">
+            <div class="ui rounded image">
+                <img>
+            </div>
+        </div>
+        <!--<div class="four wide right aligned column">-->
+        <!--<img class="ui medium image" src="content/images/2018/01/DSC_4425.jpg">-->
+        <!--</div>-->
+        <div class="seven wide left aligned column">
+            <div class="ui basic segment">
+                <br/>
+                <br/>
+                <h2>Squirrels Without Morality</h2>
+
+                <span class="icon link outline colored"></span>
+                <a href="http://www.thesign.al">squirrelswithoutmorality.com</a>
+                <p><br/>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales, augue non facilisis
+                    tempor, nisl erat ullamcorper nisi, eget fermentum enim urna vitae ex. Phasellus faucibus mattis
+                    odio, in vehicula nunc venenatis nec. Pellentesque neque odio, pellentesque nec diam sed, finibus
+                    dapibus erat. Sed nec est porta, pretium elit ac, faucibus elit. Suspendisse mattis ligula a
+                    venenatis bibendum. Aenean quis velit nec purus lobortis efficitur. Maecenas sodales leo non diam
+                    porta, eget aliquet dui consectetur. Mauris eget viverra nisi, eu bibendum sapien.
+                </p>
+            </div>
+        </div>
+    </div>
 </div>

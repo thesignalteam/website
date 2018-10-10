@@ -1,14 +1,51 @@
 <!-- start tag widget -->
 
-
-
-    {{#get "tags" limit="all" order="name asc"}}
-        {{#foreach tags}}
-            <a class="ui button" href="{{url}}">
-                {{name}}
-            </a>
-        {{/foreach}}
+<div class="centered row">
+    <div class="fifteen wide column">
+        <div class="ui secondary pointing right menu">
+            <a class="active item">TAGS</a>
+        </div>
+        {{#get "tags" limit="all" order="name asc"}}
+        	{{!-- modified from: https://codepen.io/nxworld/pen/ByGGPj --}}
+        	<div class="custom-tagcloud" style="width:100%">
+    	    	<ul>
+    	        {{#foreach tags}}
+    	            <li><a class="ui label outline" href="{{url}}">{{name}}</a></li>
+    	        {{/foreach}}
+    	    	</ul>
+        	</div>
+        	<style>
+    			.custom-tagcloud ul {
+    				margin: 0;
+    				padding: 0;
+    				list-style: none;
+    			}
+    			.custom-tagcloud ul li {
+    				display: inline-block;
+    				margin: 0 .3em .3em 0;
+    				padding: 0;
+    			}
+    			.custom-tagcloud ul li a {
+    				display: inline-block;
+    				height: 28px;
+    				line-height: 28px;
+    				padding: 0 1em;
+    				background-color: #fff;
+    				border: 1px solid #aaa;
+    				border-radius: 3px;
+    				white-space: nowrap;
+    				color: #333;
+    				font-size: 13px;
+    				text-decoration: none;
+    				-webkit-transition: .2s;
+    				transition: .2s;
+    			}
+        	</style>
         {{/get}}
+    </div>
+</div>
+
+
 
 
 <!-- end tag widget -->

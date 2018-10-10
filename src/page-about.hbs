@@ -1,100 +1,313 @@
 {{!< default}}
-<div class="ui image"><img src="/content/images/2017/02/Signal-Logo-FB-banner.png">
+
+<div class="ui image" id="about-header">
+    {{> header}}
+    <img src="{{asset "images/graphic_noise.svg"}}">
 </div>
-<br><br/>
-<br><br/>
-<div class="ui twelve column centered grid">
+
+<div class="ui twelve column centered grid about">
     <div class="two wide left aligned column"><h4>MISSION</h4></div>
-    <div class="ten wide left aligned column">
+    <div class="ten wide left aligned column content">
         <div class="ui basic segment">
             <br/>
-            <p>In 2017, The Signal began as a publication that encouraged the exploration of unconventional career paths and creative passions at Penn. Today, we are a collective of creators, designers, writers, and everything in between, with the goal of enhancing the undergraduate experience for all students. We provide resources to help students discover their passions and live deliberately at Penn, in their careers, and beyond.
+            <p>In 2017, The Signal began as a publication that encouraged the exploration of unconventional career paths
+                and creative passions at Penn. Today, we are a collective of creators, designers, writers, and
+                everything in between, with the goal of enhancing the undergraduate experience for all students. We
+                provide resources to help students discover their passions and live deliberately at Penn, in their
+                careers, and beyond.
+
+                <br>
+                <span class="icon link outline colored"></span>
+                <a href="http://www.thesign.al/pages/anniversary">Check out our anniversary recap from Spring 2018</a>
+
             </p>
+
         </div>
     </div>
 </div>
 <br><br/>
-<div class="ui twelve column centered grid">
+<div class="ui twelve column centered grid about headshots" id="team">
     <div class="two wide left aligned column"><h4>THE TEAM</h4></div>
-    <div class="ten wide left aligned column">
+    <div class="ten wide left aligned column content">
         <div class="ui container">
-            <br/>
-            <div class="ui stackable five column grid">
-                <div class="column center aligned">
-                    <div class="ui image"><img src="/content/images/2017/02/bill_headshot-1.jpg" class="avatar">
+            <div class="ui stackable four column grid">
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="{{asset "images/default-user-image.jpg"}}" class="avatar">
+                        <div class="filter"></div>
+                    </div>
+                    <h3>Airika Lee</h3>
+                    <p>Business</p>
+                </div>
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="{{asset "images/default-user-image.jpg"}}" class="avatar">
+                        <div class="filter"></div>
+                    </div>
+                    <h3>Alicia Lu</h3>
+                    <p>Business</p>
+                </div>
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="{{asset "images/default-user-image.jpg"}}" class="avatar">
+                        <div class="filter"></div>
+                    </div>
+                    <h3>Ben Fung</h3>
+                    <p>Content</p>
+                </div>
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="{{asset "images/default-user-image.jpg"}}" class="avatar">
+                        <div class="filter"></div>
                     </div>
                     <h3>Bill He</h3>
+                    <p>Co-founder</p>
+                </div>
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="{{asset "images/default-user-image.jpg"}}" class="avatar">
+                        <div class="filter"></div>
+                    </div>
+                    <h3>Grace Jiang</h3>
+                    <p>Developer</p>
+                </div>
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="{{asset "images/default-user-image.jpg"}}" class="avatar">
+                        <div class="filter"></div>
+                    </div>
+                    <h3>Halil Can Memoglu</h3>
+                    <p>Developer</p>
+                </div>
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="{{asset "images/default-user-image.jpg"}}" class="avatar">
+                        <div class="filter"></div>
+                    </div>
+                    <h3>Hannah Wang</h3>
+                    <p>Developer</p>
+                </div>
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="{{asset "images/default-user-image.jpg"}}" class="avatar">
+                        <div class="filter"></div>
+                    </div>
+                    <h3>Hoyt Gong</h3>
+                    <p>Content</p>
+                </div>
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="{{asset "images/default-user-image.jpg"}}" class="avatar">
+                        <div class="filter"></div>
+                    </div>
+                    <h3>Jerome Cohen</h3>
+                    <p>Business</p>
+                </div>
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="{{asset "images/default-user-image.jpg"}}" class="avatar">
+                        <div class="filter"></div>
+                    </div>
+                    <h3>Airika Lee</h3>
+                    <p>Business</p>
+                </div>
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="{{asset "images/default-user-image.jpg"}}" class="avatar">
+                        <div class="filter"></div>
+                    </div>
+                    <h3>Jessica Li</h3>
+                    <p>Content</p>
+                </div>
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="{{asset "images/default-user-image.jpg"}}" class="avatar">
+                        <div class="filter"></div>
+                    </div>
+                    <h3>Jonathan Mak</h3>
+                    <p>Content</p>
+                </div>
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="{{asset "images/default-user-image.jpg"}}" class="avatar">
+                        <div class="filter"></div>
+                    </div>
+                    <h3>Kasra Koushan</h3>
                     <p>Co-director</p>
                 </div>
-                <div class="column center aligned">
-                    <div class="ui image"><img src="/content/images/2017/02/bill_headshot-1.jpg" class="avatar">
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="{{asset "images/default-user-image.jpg"}}" class="avatar">
+                        <div class="filter"></div>
                     </div>
-                    <h3>Bill He</h3>
+                    <h3>Madeleine Ngo</h3>
+                    <p>Designer</p>
+                </div>
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="{{asset "images/default-user-image.jpg"}}" class="avatar">
+                        <div class="filter"></div>
+                    </div>
+                    <h3>Melinda Hu</h3>
                     <p>Co-director</p>
                 </div>
-                <div class="column center aligned">
-                    <div class="ui image"><img src="/content/images/2017/02/bill_headshot-1.jpg" class="avatar">
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="{{asset "images/default-user-image.jpg"}}" class="avatar">
+                        <div class="filter"></div>
                     </div>
-                    <h3>Bill He</h3>
+                    <h3>Miguel De Armas</h3>
+                    <p>Business</p>
+                </div>
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="{{asset "images/default-user-image.jpg"}}" class="avatar">
+                        <div class="filter"></div>
+                    </div>
+                    <h3>Olivia O'Dwyer</h3>
+                    <p>Business</p>
+                </div>
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="{{asset "images/default-user-image.jpg"}}" class="avatar">
+                        <div class="filter"></div>
+                    </div>
+                    <h3>Qi Linzhi</h3>
                     <p>Co-director</p>
                 </div>
-                <div class="column center aligned">
-                    <div class="ui image"><img src="/content/images/2017/02/bill_headshot-1.jpg" class="avatar">
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="{{asset "images/default-user-image.jpg"}}" class="avatar">
+                        <div class="filter"></div>
                     </div>
-                    <h3>Bill He</h3>
-                    <p>Co-director</p>
+                    <h3>Sammie Yoon</h3>
+                    <p>Designer</p>
                 </div>
-                <div class="column center aligned">
-                    <div class="ui image"><img src="/content/images/2017/02/bill_headshot-1.jpg" class="avatar">
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="{{asset "images/default-user-image.jpg"}}" class="avatar">
+                        <div class="filter"></div>
                     </div>
-                    <h3>Bill He</h3>
-                    <p>Co-director</p>
+                    <h3>Sophia Ye</h3>
+                    <p>Developer</p>
                 </div>
-                <div class="column center aligned">
-                    <div class="ui image"><img src="/content/images/2017/02/bill_headshot-1.jpg" class="avatar">
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="{{asset "images/default-user-image.jpg"}}" class="avatar">
+                        <div class="filter"></div>
                     </div>
-                    <h3>Bill He</h3>
-                    <p>Co-director</p>
+                    <h3>Sophia Ly</h3>
+                    <p>Content</p>
                 </div>
-                <div class="column center aligned">
-                    <div class="ui image"><img src="/content/images/2017/02/bill_headshot-1.jpg" class="avatar">
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="{{asset "images/default-user-image.jpg"}}" class="avatar">
+                        <div class="filter"></div>
                     </div>
-                    <h3>Bill He</h3>
-                    <p>Co-director</p>
+                    <h3>Tunika Onnekikami</h3>
+                    <p>Content</p>
                 </div>
-                <div class="column center aligned">
-                    <div class="ui image"><img src="/content/images/2017/02/bill_headshot-1.jpg" class="avatar">
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="{{asset "images/default-user-image.jpg"}}" class="avatar">
+                        <div class="filter"></div>
                     </div>
-                    <h3>Bill He</h3>
-                    <p>Co-director</p>
+                    <h3>Will Yoo</h3>
+                    <p>Co-founder</p>
                 </div>
-                <div class="column center aligned">
-                    <div class="ui image"><img src="/content/images/2017/02/bill_headshot-1.jpg" class="avatar">
+
+            </div>
+        </div>
+    </div>
+</div>
+<br><br/>
+<div class="ui twelve column centered grid about headshots" id="alum">
+    <div class="two wide left aligned column"><h4>ALUMNI</h4></div>
+    <div class="ten wide left aligned column content">
+        <div class="ui container">
+            <div class="ui stackable four column grid">
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="/content/images/2017/02/bill_headshot-1.jpg" class="avatar">
+                        <div class="filter"></div>
                     </div>
-                    <h3>Bill He</h3>
-                    <p>Co-director</p>
+                    <h3>Johnathan Chen</h3>
                 </div>
-                <div class="column center aligned">
-                    <div class="ui image"><img src="/content/images/2017/02/bill_headshot-1.jpg" class="avatar">
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="/content/images/2017/02/bill_headshot-1.jpg" class="avatar">
+                        <div class="filter"></div>
                     </div>
-                    <h3>Bill He</h3>
-                    <p>Co-director</p>
+                    <h3>Chuhan Shen</h3>
+                </div>
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="/content/images/2017/02/bill_headshot-1.jpg" class="avatar">
+                        <div class="filter"></div>
+                    </div>
+                    <h3>Katie Jiang</h3>
+                </div>
+
+                <div class="column center aligned headshot">
+                    <div class="ui image">
+                        <img src="/content/images/2017/02/bill_headshot-1.jpg" class="avatar">
+                        <div class="filter"></div>
+                    </div>
+                    <h3>Laura Gao</h3>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <br><br/>
-<div class="ui twelve column centered grid">
+<div class="ui twelve column centered grid about" id="faq">
     <div class="two wide left aligned column"><h4>FAQ</h4></div>
-    <div class="ten wide left aligned column">
+    <div class="ten wide left aligned column content">
         <div class="ui basic segment">
             <div class="ui list">
-                <div class="item"><a class="header">I have some follow-up questions for the guests. Can I ask them?</a></div><br/>
-                <div class="description" style="padding-left:50px">You can send an email to writers@thesign.al with any question that you might have. We'll try our best to get the response and most likely even edit your question into the article!</div>
+                <div class="item">
+                    I have some follow-up questions for the guests. Can I ask them?
+                </div>
                 <br/>
-                <div class="item"><a class="header">I know a few alumni who would be wonderful additions to this. How can I go about making the introduction?</a></div><br/>
-                <div class="description" style="padding-left:50px">If you personally know any interesting alumni who would like to share their story, don't hesitate to reach out to us with an email at writers@thesign.al. We'd love to work with you potentially to come up with questions and if you are up for it, even doing the interview together!</div>
+                <div class="description" style="padding-left:50px">You can send an email to <a href="mailto:writers@thesign.al">writers@thesign.al</a> with any
+                    question that you might have. We'll try our best to get the response and most likely even edit your
+                    question into the article!
+                </div>
+                <br/>
+                <div class="item">
+                    I know a few alumni who would be wonderful additions to this. How
+                    can I go about making the introduction?
+                </div>
+                <br/>
+                <div class="description" style="padding-left:50px">If you personally know any interesting alumni who
+                    would like to share their story, don't hesitate to reach out to us with an email at
+                    writers@thesign.al. We'd love to work with you potentially to come up with questions and if you are
+                    up for it, even doing the interview together!
+                </div>
             </div>
         </div>
     </div>

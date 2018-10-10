@@ -1,28 +1,12 @@
 {{!< default}}
-<div class="ui stackable grid">
+<div class="ui stackable grid" id="main">
 
     <!-- Space to breathe *hmm*, then subscribe bar -->
     <div class="column row"></div>
     {{!> widget-subscribe}}
 
-
     <!--featured article bar and article-->
-    <div class="centered row">
-        <div class="twelve wide column">
-        <br><br>
-        <!--trending articles bar-->
-        <div class="ui secondary pointing right menu">
-            <a class="active item">LATEST</a>
-            <div class="right menu">
-                <a class="ui item">Articles</a>
-                <a class="ui item">Interviews</a>
-                <a class="ui item">Penn</a>
-                <a class="ui item">More ></a>
-            </div>
-        </div>
-    </div>
-</div>
-<br><br>
-{{> loop}}
-<br><br><br>
+    <br><br>
+    {{> loop}}
+    <br><br><br>
 </div>

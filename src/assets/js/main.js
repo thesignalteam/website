@@ -90,11 +90,14 @@ $('#searchmodal')
     2. Initialization
     ===========================*/
     $(document).ready(function(){
+        window.SmartUnderline.init();
+
         $('.ui.sticky')
             .sticky({
                 context: '#article-content'
             })
         ;
+
         var strong = $("#content strong");
         function scroll_to_anchor(anchor_id){
             var tag = $("#" + anchor_id + "");
@@ -104,11 +107,9 @@ $('#searchmodal')
         jQuery.each(strong, function(i, val) {
             console.log(strong[i]);
             var strongSidebar = $(strong[i]).clone();
-            $(strongSidebar).wrapInner("<a href='#" + i + "' class='anchor'></a>");
+            $(strongSidebar).wrapInner("<div class='anchor'><a href='#\" + i + \"'></a></div>");
             $(strongSidebar).appendTo(sidebar);
-            sidebar.append("<br>");
-            sidebar.append("<br>");
-            return (i<2);
+            return true;
         });
 
         $(strong).each(function(index, element){

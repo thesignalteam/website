@@ -2,74 +2,79 @@
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
 <!-- start content area -->
+{{> header}}
+
 {{#post}}
-	<div class="main-content-area single-post">
-        <div class="ui container">
-		<!--<article>-->
-			<div class="post-head{{#unless feature_image}} no-image{{/unless}}" {{#if feature_image}}style="background-image:url({{feature_image}});"{{/if}}>
-			</div>
-			<div class="container">
-				<div class="row">
-                    <div class="ui centered grid">
-                        <div class="four wide center aligned column">
-                        </div>
-                        <div class="twelve wide column left aligned">
-                            <!--<div class="ui container">-->
-                                <div class="ui basic segment" id="article-content" style="border-color: transparent">
-                                    <div class="left ui rail">
-                                        <div class="ui sticky">
-                                            <div class="sidebar">
-                                                <div class="ui basic segment" id="sidebar" style="padding-top: 100px; border-color: transparent">
-                                                    <h4 class="ui header">TABLE OF CONTENTS</h4>
-                                                    {{> social-links}}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                        <div class="post meta">
-                                            <span class="article-type">INTERVIEW</span>&nbsp;&nbsp;
-                                            {{#if tags}}
-                                                <span class="category">
-                                                    {{tags separator=", "}}
-                                                </span>
-                                            {{/if}}
-                                            <h1>{{title}}</h1>
-                                            <div class="post-meta">
-                                            {{#author}}
-                                                <a class="author" href="{{url}}" rel="author">
-                                                    <span class="name">{{name}}</span>
-                                                </a>
-                                            {{/author}}
-                                            <time class="time" datetime="{{date format="YYYY-MM-DD HH:MM:SS"}}" itemprop="datePublished">| {{date format="MMMM DD, YYYY"}}</time>
-                                            </div>
-                                        </div>
-                                        <br><br/>
-                                    <div class="content" id="content">
-                                        {{content}}
-                                    </div>
-                                </div>
-                                <br><br/>
-                                <div class="ui grid">
-                                        <div class="five wide column"><h3>AUTHOR</h3>{{> about-author}}</div>
-                                        <div class="five wide column"><h3>READ MORE</h3>{{> prev-next}}</div>
-                                        <div class="five wide column"><h3 style="visibility:hidden">READ MORE</h3>{{> prev-next}}</div>
-                                </div>
+    <div class="main-content-area single-post">
+        <div class="ui container article">
+            <!--<article>-->
+            {{#if feature_image}}
+                <img class="image" src="{{feature_image}}">
+            {{/if}}
+
+            <div class="ui centered grid">
+                <div class="four wide column">
+                    <div class="ui sticky">
+                        <div class="sidebar">
+                            <div class="ui basic segment" id="sidebar">
+                                <h4 class="ui header">TABLE OF CONTENTS</h4>
                             </div>
-                        </div>
-                    <div class="container">
-                        <div class="ui two column centered grid">
-                            <div class="column">
-                                {{> widget-subscribe}}
+                            <div class="ui basic segment" id="sidebar">
+                                {{> social-links}}
                             </div>
                         </div>
                     </div>
-					</div>
-				</div>
-            <!--</div>-->
-        <!--</article>-->
+                </div>
+                <div class="twelve wide column left aligned">
+                    <div class="ui basic segment" id="article-content">
+                        <div class="post meta">
+                            <span class="article-type">INTERVIEW</span>&nbsp;&nbsp;
+                            {{#if tags}}
+                                {{#foreach tags}}
+                                    <a class="ui label filled" href="{{url}}">{{name}}</a>
+                                {{/foreach}}
+                            {{/if}}
+                            <h1>{{title}}</h1>
+                            <div class="meta">
+                                {{#author}}
+                                    {{#if profile_image}}
+                                        <img class="avatar" src="{{profile_image}}" alt="avatar">
+                                    {{else}}
+                                        <i class="user circle outline"></i>
+                                    {{/if}}
+                                    <a class="author" href="{{url}}" rel="author">
+                                        <span class="name">{{name}}</span>
+                                    </a>
+                                {{/author}}
+                                <time class="time" datetime="{{date format="YYYY-MM-DD HH:MM:SS"}}"
+                                      itemprop="datePublished">| {{date format="MMMM DD, YYYY"}}</time>
+                            </div>
+                        </div>
+                        <br><br/>
+                        <div class="content" id="content">
+                            {{content}}
+                        </div>
+                    </div>
+                    <br><br/>
+                    <div class="ui grid extra content">
+                        <div class="row">
+                            <div class="eight wide column">
+                                <h3>AUTHOR</h3>
+                                {{> about-author}}
+                            </div>
+                            <div class="eight wide column"><h3>READ NEXT</h3>{{> prev-next}}</div>
+                        </div>
+                        <div class="row">
+                            <div class="sixteen wide column">{{> widget-subscribe}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		<!--</article>-->
         </div>
-</div>
+    </div>
+    <!--</article>-->
+
+    <!--</article>-->
 {{/post}}
 <!-- end content area -->

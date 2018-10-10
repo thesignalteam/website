@@ -1,33 +1,58 @@
 {{#next_post}}
 		<div class="column">
             <!--<br/><br/>  &lt;!&ndash; Space to breathe *hmm* &ndash;&gt;-->
-            <div class="post-card ui card">
+            <div class="ui link card">
+                <!--image-->
                 {{#if feature_image}}
-                    <a href="{{url absolute="true"}}" class="permalink">
-                        <div class="featured-image" style="background-image: url({{feature_image}})"></div>
+                    <a class="image" href="{{url absolute="true"}}">
+                        <img src="{{feature_image}}"></img>
                     </a>
                 {{/if}}
                 <div class="content">
-                    <h3 class="title h4"><a href="{{url absolute="true"}}" rel="bookmark">{{title}}</a></h3>
-                    <div class="meta">
-                        {{#author}}
-                            <a class="author" href="{{url}}" rel="author">
-                                <span class="name">{{name}}</span>
+                    <!--title-->
+                    <a class="header" href="{{url absolute="true"}}">{{title}}</a>
+                    <!--author-->
+                    {{#author}}
+                        <div class="meta">
+                            <a href="{{url}}" rel="author">
+                                <!--profile image-->
+                                {{#if profile_image}}
+                                    <img class="avatar" src="{{profile_image}}" alt="avatar">
+                                {{else}}
+                                    <i class="user circle outline"></i>
+                                {{/if}}
+                                <span class="author">{{name}}</span>
                             </a>
-                        {{/author}}
-                        <time class="time" datetime="{{date format="YYYY-MM-DD HH:MM:SS"}}" itemprop="datePublished">| {{date format="MMMM DD, YYYY"}}</time>
-                    </div>
+                            <!--date-->
+                            <span class="divider"> | </span>
+                            <span class="date">{{date format="MMM DD, YYYY"}}</span>
+                        </div>
+                    {{/author}}
+                    <!--preview-->
                     <div class="description">
-                        After dropping out and becoming homeless, Dr. Vivienne Ming got a Ph.D., became a transgender rights
-                        advocate, and devoted her life to researching purpose.
+                        {{#if meta_description}}
+                            <p>{{meta_description}} <a class="read-more" href="{{url}}"></a></p>
+                        {{else}}
+                            <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}"></a></p>
+                        {{/if}}
                     </div>
                 </div>
-                <div class="extra content">
-                    <span><a class="article-type">INTERVIEW</a> |
-                    {{#if tags}}
-                        <span class="category">{{tags separator=", "}}</span>
-                    {{/if}}
-                </div>
+                {{#if tags}}
+                    <div class="extra content">
+                        {{#if primary_tag}}
+                            <span class="primary-tag">{{primary_tag.name}}</span>
+                        {{else}}
+                            <a class="article-type">N/A</a>
+                        {{/if}}
+
+                        {{#foreach tags from="2" to="3"}}
+                            <span class="tag"><a href="{{url}}">{{name}}</a></span>
+                        {{/foreach}}
+
+                        <!--<span class="tag"><a>LGBT</a></span>-->
+                        <!--<span class="tag"><a>Data Science</a></span>-->
+                    </div>
+                {{/if}}
             </div>
         </div>
 {{/next_post}}

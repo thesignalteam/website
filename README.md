@@ -1,5 +1,6 @@
 # thesignal-alpha
 Code and Docker environment for the revamped The Sign.al. <br>
+Complete Mockup: https://www.figma.com/file/P298oBsLwlSv8wUcAgOvNXvb/The-Signal---Mockup
 
 ### IDE
 [WebStorm](https://www.jetbrains.com/webstorm/) from JetBrains is highly recommended.
@@ -45,13 +46,6 @@ Testing server is available at `http://alpha.thesign.al`. Contact Bill if you ne
 #### Building Docker for Astrum
 `docker build -t (docker-hub-handle)/astrum ./style/manual` then push
 `docker push (docker-hub-handle)/astrum`
-
-
-### Mockups
-1. ~~Go to folder `mockups`.~~
-2. ~~Run `python -m SimpleHTTPServer 4002`.~~
-3. ~~Point your web browser to `http://localhost:4002`.~~
-No need for this. File server now runs inside Docker.
 
 ### Behind The Scenes
 The docker environment is composed from the official Ghost image. Database, image and configurations inside the container is mapped to this working directory on the host machine through `volumes`.
