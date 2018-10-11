@@ -99,10 +99,7 @@ $('#searchmodal')
         ;
 
         var strong = $("#content strong");
-        function scroll_to_anchor(anchor_id){
-            var tag = $("#" + anchor_id + "");
-            $('html,body').animate({scrollTop: tag.offset().top},'slow');
-        }
+
         var sidebar = $('#sidebar');
         jQuery.each(strong, function(i, val) {
             console.log(strong[i]);
@@ -116,16 +113,22 @@ $('#searchmodal')
             $(this).wrapInner("<div id='" + index + "' class='anchor'></div>");
         });
 
+        function scroll_to_anchor(anchor_id){
+            var tag = $("#" + anchor_id + "");
+            $('html,body').animate({scrollTop: tag.offset().top},'slow');
+        }
+
         var sidebarAnchors = $('#sidebar, .anchor');
-        $(sidebarAnchors).each(function(index, element) {
-            $(sidebarAnchors[index]).click(function(event) {
-                var id = $('#' + index + "");
-                console.log(id);
-                console.log($(id));
-                var contentAnchors = $('#content', id);
-                event.preventDefault();
-                console.log(id.offset());
-                $('html,body').animate({scrollTop: (id).offset().top},'slow');
+        $(sidebarAnchors).each(function(index) {
+            $(sidebarAnchors[index]).click(function() {
+                // var id = $('#' + index + "");
+                // console.log(id);
+                // console.log($(id));
+                // var contentAnchors = $('#content', id);
+                // event.preventDefault();
+                // console.log(id.offset());
+                // $('html,body').animate({scrollTop: (id).offset().top},'slow');
+                scroll_to_anchor(index);
             })
         });
 
