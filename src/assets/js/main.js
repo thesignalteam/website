@@ -119,13 +119,14 @@ $('#searchmodal')
         var sidebarAnchors = $('#sidebar, .anchor');
         $(sidebarAnchors).each(function(index, element) {
             $(sidebarAnchors[index]).click(function(event) {
-                var id = $('#' + index + "");
-                console.log(id);
-                console.log($(id));
-                var contentAnchors = $('#content', id);
-                event.preventDefault();
-                console.log(id.offset());
-                $('html,body').animate({scrollTop: (id).offset().top},'slow');
+                // var id = $('#' + index + "");
+                // console.log(id);
+                // console.log($(id));
+                // var contentAnchors = $('#content', id);
+                // event.preventDefault();
+                // console.log(id.offset());
+                // $('html,body').animate({scrollTop: (id).offset().top},'slow');
+                scroll_to_anchor(index);
             })
         });
 
