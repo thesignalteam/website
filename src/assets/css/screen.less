@@ -1213,7 +1213,7 @@ margin-bottom: 40px;
 }
 
 /*====================================================
-	19. Fixed Horizontal card and header
+	19. Fixed Horizontal card, page header, subscribe cta
 ====================================================*/
 .ui.card.featured {
 	width: auto;
@@ -1245,8 +1245,8 @@ margin-bottom: 40px;
 		height: 100%;
 		position: relative;
 	}
-	.ui.card.featured .content .description {
 
+	.ui.card.featured .content .description {
 		position: relative;
 		top: 10px;
 		width: 100%;
@@ -1258,13 +1258,19 @@ margin-bottom: 40px;
 		height: 80vh;
 	}
 }
+
 @media only screen and (max-width: 700px) {
   #header {
     flex-direction: column;
   }
 
-  .ui.menu:not(.vertical) .right.item, .ui.menu:not(.vertical) .right.menu {
+.ui.menu:not(.vertical) .right.item, .ui.menu:not(.vertical) .right.menu {
     display: flex;
     margin-left: 0 !important;
   }
+}
+
+#main #subscribe-header .ui.message {
+  margin: -5% 5% 0;
+  box-shadow: 5px 5px 7px 7px aliceblue;
 }
