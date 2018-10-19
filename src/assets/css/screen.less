@@ -1211,3 +1211,60 @@ margin-bottom: 40px;
 		}
 	}
 }
+
+/*====================================================
+	19. Fixed Horizontal card and header
+====================================================*/
+.ui.card.featured {
+	width: auto;
+	height: 300px;
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+	.ui.card.featured {
+		min-height: 600px;
+		height: 60vh;
+	}
+	.ui.card.featured > .ui.grid {
+		flex-direction: column;
+	}
+
+	.ui.grid > .row > [class*="eight wide"].column, .ui.grid > .column.row > [class*="eight wide"].column, .ui.grid > [class*="eight wide"].column, .ui.column.grid > [class*="eight wide"].column {
+		display: flex;
+		flex: 1;
+		width: 100% !important;
+		overflow: hidden;
+	}
+	.ui.grid > .row > [class*="eight wide"].column, .ui.grid > .column.row > [class*="eight wide"].column, .ui.grid > [class*="eight wide"].column, .ui.column.grid > [class*="eight wide"].column:nth-child(2) {
+		flex:4;
+	}
+	.ui.card.featured .content {
+		margin: 30px;
+		border-top: 0;
+		height: 100%;
+		position: relative;
+	}
+	.ui.card.featured .content .description {
+
+		position: relative;
+		top: 10px;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.ui.card.featured {
+		height: 80vh;
+	}
+}
+@media only screen and (max-width: 700px) {
+  #header {
+    flex-direction: column;
+  }
+
+  .ui.menu:not(.vertical) .right.item, .ui.menu:not(.vertical) .right.menu {
+    display: flex;
+    margin-left: 0 !important;
+  }
+}
