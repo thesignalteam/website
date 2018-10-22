@@ -56,8 +56,8 @@ $('#searchmodal')
                 onKeyUp         : true,
                 onPageLoad      : true,
                 includepages    : true,
-                info_template   : "<div class=\"info align-center\">{{amount}} posts found</div>",
-                result_template : "<div class=\"result\"><a href='{{link}}'><div class=\"h5\">{{title}}</div><div class=\"date\">{{pubDate}}</div>{{description}}</a></div>"
+                info_template   : "<div class=\"search counter\">{{amount}} posts found</div>",
+                result_template : "<div class=\"search result\"><a href='{{link}}'><div class=\"title\">{{title}}</div><div class=\"date\">{{pubDate}}</div></a></div>"
             });
             $('#searchmodal').on('hidden.bs.modal', function() {
                  searchField.clear();
