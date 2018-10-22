@@ -1251,6 +1251,9 @@ margin-bottom: 40px;
 		top: 10px;
 		width: 100%;
 	}
+  .ui.message > .icon {
+    margin-right: 0.6em;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -1270,7 +1273,26 @@ margin-bottom: 40px;
   }
 }
 
+@media only screen and (max-width: 850px) {
+  .ui.message {
+    padding: 40px 10%;
+  }
+  #main #subscribe-header .ui.message {
+    flex-direction: column;
+  }
+  .ui.message > .icon {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
 #main #subscribe-header .ui.message {
   margin: -5% 5% 0;
-  box-shadow: 5px 5px 7px 7px aliceblue;
+  padding: 40px 15%;
+  box-shadow: 2px 2px 7px 5px aliceblue;
+  max-width: 1200px;
+}
+
+#subscribe-header {
+  justify-content: center;
 }
