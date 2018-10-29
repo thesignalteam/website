@@ -92,6 +92,8 @@ $('#searchmodal')
     $(document).ready(function(){
         window.SmartUnderline.init();
 
+        // initialize sidebar properties
+
         $('.ui.sticky')
             .sticky({
                 context: '#article-content'
@@ -99,35 +101,23 @@ $('#searchmodal')
         ;
 
         var strong = $("#content strong");
-        function scroll_to_anchor(anchor_id){
-            var tag = $("#" + anchor_id + "");
-            $('html,body').animate({scrollTop: tag.offset().top},'slow');
-        }
         var sidebar = $('#sidebar');
-        jQuery.each(strong, function(i, val) {
-            console.log(strong[i]);
-            var strongSidebar = $(strong[i]).clone();
-            $(strongSidebar).wrapInner("<div class='anchor'><a href='#\" + i + \"'></a></div>");
+
+        // tag anchor text and append anchor links to sidebar
+        $(strong).each(function(index, element){
+            var strongSidebar = $(strong[index]).clone();
+            $(strong[index]).wrapInner("<div class='anchor' id='" + index + "'></div>");
+            $(strongSidebar).wrapInner("<div class='sidebar-link'><a href='#" + index + "' class='anchor-link'></a></div>");
+            $('.sidebar-link').css("padding-bottom", "5px");
             $(strongSidebar).appendTo(sidebar);
             return true;
         });
 
-        $(strong).each(function(index, element){
-            $(this).wrapInner("<div id='" + index + "' class='anchor'></div>");
-        });
-
-        var sidebarAnchors = $('#sidebar, .anchor');
-        $(sidebarAnchors).each(function(index, element) {
-            $(sidebarAnchors[index]).click(function(event) {
-                // var id = $('#' + index + "");
-                // console.log(id);
-                // console.log($(id));
-                // var contentAnchors = $('#content', id);
-                // event.preventDefault();
-                // console.log(id.offset());
-                // $('html,body').animate({scrollTop: (id).offset().top},'slow');
-                scroll_to_anchor(index);
-            })
+        // onclick listener for scrolling to anchors
+        $('.anchor-link').click(function(event) {
+            event.preventDefault();
+            var target = $(this).attr('href');
+            $('body, html').animate({scrollTop: $(target).offset().top}, '800');
         });
 
         themeApp.init();
