@@ -2,12 +2,19 @@
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 {{> header}}
 
-{{> cover-author}}
 <!-- start content area -->
-<div class="main-content-area">
-	<div class="container post-listing">
-        <h2>Articles</h2>
-		{{> loop}}
-	</div>
+<div class="main-content-area ui stackable grid">
+    <div class="centered row">
+        <div class="fourteen wide column">
+            {{> cover-author}}
+        </div>
+    </div>
+    <div class="centered row">
+        <div class="fourteen wide column container post-listing">
+            <h2>Articles</h2>
+            {{> loop}}
+        </div>
+    </div>
 </div>
+
 <!-- end content area -->
