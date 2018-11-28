@@ -1,91 +1,112 @@
+{{#unless paged}}
+    {{> header}}
+{{/unless}}
+
 <div class="centered row">
+    {{#unless paged}}
+        <div class="fifteen wide column" id="tag-row">
+            <div id="tag-label">ARCHIVE</div>
+            <br>
+        </div>
+    {{/unless}}
+
     <!-- center everything -->
     <div class="fifteen wide column">
-
-        {{#unless paged}}
-            <div class="ui secondary pointing right menu">
-                <a class="active item">LATEST</a>
-                <div class="right menu">
-                    <a class="ui item" href="/tag/interview">Interviews</a>
-                    <a class="ui item" href="/tag/data-driven">Data-Driven Articles</a>
+        {{#unless content_only}}
+            {{#if paged}}
+                <div class="ui secondary pointing right menu">
+                    <a class="active item">LATEST</a>
                 </div>
-            </div>
+            {{/if}}
         {{/unless}}
 
-        {{#if paged}}
-            <div class="centered row" style="margin-top: -80px; margin-bottom: 50px;">
+        {{#unless paged}}
+            <br>
+            <div class="centered row">
                 <div align="center">
                     {{pagination}}
                 </div>
             </div>
-        {{/if}}
+            <br>
+        {{/unless}}
 
         <!-- the posts will be in the middle 12 -->
+        {{#if content_only}}
+        <div class="ui three doubling stackable cards">
+        {{/if}}
+        {{#unless content_only}}
         <div class="ui three doubling stackable cards centered">
-            {{#foreach posts}}
-                <div class="ui link card">
-                    <!--image-->
-                    {{#if feature_image}}
-                        <a class="image" href="{{url absolute="true"}}">
-                            <img src="{{feature_image}}"></img>
-                        </a>
-                    {{/if}}
-                    <div class="content">
-                        <!--title-->
-                        <a class="header" href="{{url absolute="true"}}">{{title}}</a>
-                        <!--author-->
-                        {{#author}}
-                            <div class="meta">
-                                <a href="{{url}}" rel="author">
-                                    <!--profile image-->
-                                    {{#if profile_image}}
-                                        <img class="avatar" src="{{profile_image}}" alt="avatar">
-                                    {{else}}
-                                        <i class="user circle outline"></i>
-                                    {{/if}}
-                                    <span class="author">{{name}}</span>
-                                </a>
-                                <!--date-->
-                                <span class="divider"> | </span>
-                                <span class="date">{{date format="MMM DD, YYYY"}}</span>
-                            </div>
-                        {{/author}}
-                        <!--preview-->
-                        <div class="description">
-                            {{#if meta_description}}
-                                <p>{{meta_description}} <a class="read-more" href="{{url}}"></a></p>
-                            {{else}}
-                                <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}"></a></p>
-                            {{/if}}
+        {{/unless}}
+        {{#foreach posts}}
+            <div class="ui link card">
+                <!--image-->
+                {{#if feature_image}}
+                    <a class="image" href="{{url absolute="true"}}">
+                        <img src="{{feature_image}}"></img>
+                    </a>
+                {{/if}}
+                <div class="content">
+                    <!--title-->
+                    <a class="header" href="{{url absolute="true"}}">{{title}}</a>
+                    <!--author-->
+                    {{#author}}
+                        <div class="meta">
+                            <a href="{{url}}" rel="author">
+                                <!--profile image-->
+                                {{#if profile_image}}
+                                    <img class="avatar" src="{{profile_image}}" alt="avatar">
+                                {{else}}
+                                    <i class="user circle outline"></i>
+                                {{/if}}
+                                <span class="author">{{name}}</span>
+                            </a>
+                            <!--date-->
+                            <span class="divider"> | </span>
+                            <span class="date">{{date format="MMM DD, YYYY"}}</span>
                         </div>
+                    {{/author}}
+                    <!--preview-->
+                    <div class="description">
+                        {{#if meta_description}}
+                            <p>{{meta_description}} <a class="read-more" href="{{url}}"></a></p>
+                        {{else}}
+                            <p>{{excerpt words="30"}} <a class="read-more" href="{{url}}"></a></p>
+                        {{/if}}
                     </div>
-                    {{#if tags}}
-                        <div class="extra content">
-                            {{#if primary_tag}}
-                                <span class="primary-tag">{{primary_tag.name}}</span>
-                            {{else}}
-                                <a class="article-type">N/A</a>
-                            {{/if}}
-
-                            {{#foreach tags from="2" to="3"}}
-                                <span class="tag"><a href="{{url}}">{{name}}</a></span>
-                            {{/foreach}}
-
-                            <!--<span class="tag"><a>LGBT</a></span>-->
-                            <!--<span class="tag"><a>Data Science</a></span>-->
-                        </div>
-                    {{/if}}
                 </div>
-            {{/foreach}}
-        </div>
+                {{#if tags}}
+                    <div class="extra content">
+                        {{#if primary_tag}}
+                            <span class="primary-tag">{{primary_tag.name}}</span>
+                        {{else}}
+                            <a class="article-type">N/A</a>
+                        {{/if}}
+
+                        {{#foreach tags from="2" to="3"}}
+                            <span class="tag"><a href="{{url}}">{{name}}</a></span>
+                        {{/foreach}}
+
+                        <!--<span class="tag"><a>LGBT</a></span>-->
+                        <!--<span class="tag"><a>Data Science</a></span>-->
+                    </div>
+                {{/if}}
+            </div>
+        {{/foreach}}
+
+        {{#unless content_only}}
+            {{#if paged}}
+                <div class="center" style="width: 100%; display: block; text-align: center">
+                    <br>
+                    <a href="/page/2/">
+                        <button class="ui secondary basic button" type="submit" style="display: inline-block;">VIEW
+                            OLDER
+                        </button>
+                    </a>
+                </div>
+            {{/if}}
+        {{/unless}}
     </div>
-</div>
-<br><br>
-{{#unless paged}}
-    <div class="centered row">
-        <div align="center">
-            {{pagination}}
-        </div>
     </div>
-{{/unless}}
-<br><br>
+    </div>
+    <br><br>
+    <br><br>

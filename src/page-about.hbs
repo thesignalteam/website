@@ -31,6 +31,23 @@
     <div class="ten wide left aligned column content">
         <div class="ui container">
             <div class="ui stackable four column grid">
+                <!--{{#get 'users' limit='all' filter=status:active order='name asc'}}-->
+                    <!--{{#foreach users}}-->
+                        <!--<div class="column center aligned headshot">-->
+                            <!--<div class="ui image">-->
+                                <!--{{#if profile_image}}-->
+                                    <!--<img src="{{profile_image}}" class="avatar">-->
+                                <!--{{else}}-->
+                                    <!--<img src="{{asset "images/default-user-image.jpg"}}" class="avatar">-->
+                                <!--{{/if}}-->
+                                <!--<div class="filter"></div>-->
+                            <!--</div>-->
+                            <!--<h3>{{name}}</h3>-->
+                            <!--<p>Business</p>-->
+                        <!--</div>-->
+                    <!--{{/foreach}}-->
+                <!--{{/get}}-->
+
                 <div class="column center aligned headshot">
                     <div class="ui image">
                         <img src="{{asset "images/default-user-image.jpg"}}" class="avatar">
@@ -293,7 +310,8 @@
                     I have some follow-up questions for the guests. Can I ask them?
                 </div>
                 <br/>
-                <div class="description" style="padding-left:50px">You can send an email to <a href="mailto:writers@thesign.al">writers@thesign.al</a> with any
+                <div class="description" style="padding-left:50px">You can send an email to <a
+                        href="mailto:writers@thesign.al">writers@thesign.al</a> with any
                     question that you might have. We'll try our best to get the response and most likely even edit your
                     question into the article!
                 </div>

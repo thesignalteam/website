@@ -1,51 +1,69 @@
 <!-- start tag widget -->
 
+<script>
+    window.shuffle_tags = function () {
+        var ul = document.querySelector('ul');
+        for (var i = ul.children.length; i >= 0; i--) {
+            ul.appendChild(ul.children[Math.random() * i | 0]);
+        }
+    };
+
+    setTimeout(window.shuffle_tags, 1000);
+</script>
+
 <div class="centered row">
     <div class="fifteen wide column">
         <div class="ui secondary pointing right menu">
             <a class="active item">TAGS</a>
+
+            <div class="right menu">
+                <a class="ui item" onclick="window.shuffle_tags()">
+                    <div class="icon shuffle"></div>
+                    SHUFFLE</a>
+            </div>
         </div>
+
         {{#get "tags" limit="all" order="name asc"}}
-        	{{!-- modified from: https://codepen.io/nxworld/pen/ByGGPj --}}
-        	<div class="custom-tagcloud" style="width:100%">
-    	    	<ul>
-    	        {{#foreach tags}}
-    	            <li><a class="ui label outline" href="{{url}}">{{name}}</a></li>
-    	        {{/foreach}}
-    	    	</ul>
-        	</div>
-        	<style>
-    			.custom-tagcloud ul {
-    				margin: 0;
-    				padding: 0;
-    				list-style: none;
-    			}
-    			.custom-tagcloud ul li {
-    				display: inline-block;
-    				margin: 0 .3em .3em 0;
-    				padding: 0;
-    			}
-    			.custom-tagcloud ul li a {
-    				display: inline-block;
-    				height: 28px;
-    				line-height: 28px;
-    				padding: 0 1em;
-    				background-color: #fff;
-    				border: 1px solid #aaa;
-    				border-radius: 3px;
-    				white-space: nowrap;
-    				color: #333;
-    				font-size: 13px;
-    				text-decoration: none;
-    				-webkit-transition: .2s;
-    				transition: .2s;
-    			}
-        	</style>
+        {{!-- modified from: https://codepen.io/nxworld/pen/ByGGPj --}}
+            <div class="custom-tagcloud" style="width:100%">
+                <ul>
+                    {{#foreach tags}}
+                        <li><a class="ui label outline" href="{{url}}">{{name}}</a></li>
+                    {{/foreach}}
+                </ul>
+            </div>
+            <style>
+                .custom-tagcloud ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                }
+
+                .custom-tagcloud ul li {
+                    display: inline-block;
+                    margin: 0 .3em .3em 0;
+                    padding: 0;
+                }
+
+                .custom-tagcloud ul li a {
+                    display: inline-block;
+                    height: 28px;
+                    line-height: 28px;
+                    padding: 0 1em;
+                    background-color: #fff;
+                    border: 1px solid #aaa;
+                    border-radius: 3px;
+                    white-space: nowrap;
+                    color: #333;
+                    font-size: 13px;
+                    text-decoration: none;
+                    -webkit-transition: .2s;
+                    transition: .2s;
+                }
+            </style>
         {{/get}}
     </div>
 </div>
-
-
 
 
 <!-- end tag widget -->

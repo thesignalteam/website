@@ -8,11 +8,15 @@
 
 <div class="ui stackable grid">
 
-  <div class="column row"></div>
-
   <div class="centered row">
-      <div class="twelve wide column">
-          <a class="ui label heading" href="/">{{tag.name}}</a>
+
+      <div class="fourteen wide column" id="tag-row">
+          <div id="tag-label">TAG: </div>
+          <a class="ui label heading" href="/" id="tag-body">{{tag.name}}</a>
+      </div>
+
+      <div class="fourteen wide column" style="height: 50px">
+
       </div>
 
       <div class="fourteen wide column">
@@ -20,7 +24,7 @@
               <p class="tag-description">{{tag.description}}</p>
           {{/if}}
 
-          {{> loop}}
+          {{> loop content_only=true paged=true}}
 
           {{> widget-tagcloud}}
       </div>

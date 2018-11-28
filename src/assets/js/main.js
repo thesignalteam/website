@@ -2,7 +2,7 @@
 // search modal
 $('#searchmodal')
   .modal('attach events', '.ui.primary.search.item')
-  .modal('setting', 'transition', 'horizontal flip')
+//   .modal('setting', 'transition', 'horizontal flip')
 ;
 
 /*====================================================
