@@ -1,6 +1,4 @@
-{{#unless paged}}
-    {{> header}}
-{{/unless}}
+
 
 <div class="centered row">
     {{#unless paged}}
@@ -22,7 +20,7 @@
 
         {{#unless paged}}
             <br>
-            <div class="centered row">
+            <div class="centered row" style="margin-bottom: 50px">
                 <div align="center">
                     {{pagination}}
                 </div>
@@ -93,6 +91,16 @@
             </div>
         {{/foreach}}
 
+        {{#unless paged}}
+            <br>
+            <div class="centered row" style="margin-top: 50px; width: 100%">
+                <div align="center">
+                    {{pagination}}
+                </div>
+            </div>
+            <br>
+        {{/unless}}
+
         {{#unless content_only}}
             {{#if paged}}
                 <div class="center" style="width: 100%; display: block; text-align: center">
@@ -108,5 +116,3 @@
     </div>
     </div>
     </div>
-    <br><br>
-    <br><br>
