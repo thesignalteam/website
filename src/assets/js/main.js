@@ -106,8 +106,8 @@ $('#searchmodal')
         // tag anchor text and append anchor links to sidebar
         $(strong).each(function(index, element){
             var strongSidebar = $(strong[index]).clone();
-            $(strong[index]).wrapInner("<div class='anchor' id='" + index + "'></div>");
-            $(strongSidebar).wrapInner("<div class='sidebar-link'><a href='#" + index + "' class='anchor-link'></a></div>");
+            $(strong[index]).wrapInner("<div class='anchor' id='content-" + index + "'></div>");
+            $(strongSidebar).wrapInner("<div class='sidebar-link'><a href='#content-" + index + "' class='anchor-link'></a></div>");
             $('.sidebar-link').css("padding-bottom", "5px");
             $(strongSidebar).appendTo(sidebar);
             return true;
