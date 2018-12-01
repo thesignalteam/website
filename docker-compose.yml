@@ -16,7 +16,7 @@ services:
 #      - NPM_CONFIG_LOGLEVEL=debug
       database__client: sqlite3
       database__connection__filename: "/var/lib/ghost/content/data/ghost.db"
-      url: "http://beta.thesign.al/"
+      url: "http://thesign.al/"
 
   static:
     image: nginx:1.13.8
