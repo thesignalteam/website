@@ -123,3 +123,15 @@ $('#searchmodal')
         themeApp.init();
     });
 }(jQuery));
+
+        /*===================
+        Mobile sidebar
+         ===================*/
+let toggleSidebar = () => {
+    let sidebarContainer = document.getElementById("sidebar-container");
+    if (sidebarContainer.style.display === "none") {
+        sidebarContainer.style.display = "flex";
+    } else {
+        sidebarContainer.style.display = "none";
+    }
+}
