@@ -13,13 +13,24 @@
             {{/if}}
 
             <div class="ui centered grid" id="article-grid">
-                <div class="sidebar-button-container ui sticky">
-                    <button id="sidebar-button">
-                        HAM
-                    </button>
-                </div>
                 <div class="four wide column" id="sidebar-column">
                     <div class="ui sticky">
+                        <script>
+                            let toggleSidebar = () => {
+                              let sidebarContainer = document.getElementById("sidebar-container");
+                                if (sidebarContainer.style.display === "none") {
+                                  sidebarContainer.style.display = "flex";
+                                } else {
+                                  sidebarContainer.style.display = "none";
+                                }
+                            }
+                        </script>
+                        <div class="sidebar-button-container ui sticky">
+                            <button id="sidebar-button" onclick = "toggleSidebar()">
+                                HAM
+                            </button>
+                            <!-- onclick = () => document.getElementById("sidebar-container").style.display = "none" -->
+                        </div>
                         <div class="sidebar">
                             <div class="ui basic segment" id="sidebar">
                                 <h4 class="ui header">TABLE OF CONTENTS</h4>
