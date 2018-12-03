@@ -13,7 +13,7 @@
             {{/if}}
 
             <div class="ui centered grid" id="article-grid">
-                <div class="four wide column">
+                <div class="four wide column" id="sidebar-column">
                     <div class="ui sticky">
                         <div class="sidebar">
                             <div class="ui basic segment" id="sidebar">
@@ -69,13 +69,12 @@
                                     </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="sixteen wide column">{{> widget-subscribe}}</div>
-                        </div>
                     </div>
                 </div>
             </div>
-
+            <div class="row">
+                <div class="sixteen wide column">{{> widget-subscribe}}</div>
+            </div>
         </div>
     </div>
     <!--</article>-->
