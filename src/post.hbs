@@ -58,11 +58,16 @@
                     <br><br/>
                     <div class="ui grid extra content">
                         <div class="row">
-                            <div class="eight wide column">
-                                <h3>AUTHOR</h3>
-                                {{> about-author}}
+                            <div class="ui doubling stackable grid container">
+                                    <div class="eight wide column">
+                                        <h3>AUTHOR</h3>
+                                        {{> about-author}}
+                                    </div>
+                                    <div class="eight wide column">
+                                        <h3>READ NEXT</h3>
+                                        {{> prev-next}}
+                                    </div>
                             </div>
-                            <div class="eight wide column"><h3>READ NEXT</h3>{{> prev-next}}</div>
                         </div>
                         <div class="row">
                             <div class="sixteen wide column">{{> widget-subscribe}}</div>
