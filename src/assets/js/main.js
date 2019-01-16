@@ -99,12 +99,12 @@ $('#searchmodal')
             })
         ;
 
-        var strong = $("#content strong");
+        var strong = $("#content h3");
         var sidebar = $('#sidebar');
 
         // tag anchor text and append anchor links to sidebar
         $(strong).each(function (index, element) {
-            var strongSidebar = $(strong[index]).clone();
+            var strongSidebar = $("<strong>" + $(strong[index]).text() + "</strong>");
             $(strong[index]).wrapInner("<div class='anchor table-of-content' id='content-" + index + "'></div>");
             $(strongSidebar).wrapInner("<div class='sidebar-link' id='link-content-" + index + "'><a href='#content-" + index + "' class='anchor-link'></a></div>");
             $('.sidebar-link').css("padding-bottom", "5px");
