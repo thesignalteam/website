@@ -1,5 +1,5 @@
 # thesignal-alpha
-Code and Docker environment for the revamped The Sign.al. <br>
+Code and Docker environment for the revamped The Signal. <br>
 Complete Mockup: https://www.figma.com/file/P298oBsLwlSv8wUcAgOvNXvb/The-Signal---Mockup
 
 ### IDE
